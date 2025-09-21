@@ -5,12 +5,21 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
+// -----------------------------
+// 1️⃣ Serve static files
+// -----------------------------
+app.use(express.static(path.join(__dirname, 'public'))); 
+
+// -----------------------------
+// 2️⃣ Handlebars setup
+// -----------------------------
 app.engine('hbs', engine({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.set('views', path.join(__dirname, 'views'));
-
+// -----------------------------
+// 3️⃣ Routes
+// -----------------------------
 app.get('/', (req, res) => {
     res.render('pages/home');
 });
@@ -27,6 +36,9 @@ app.get('/join', (req, res) => {
     res.render('pages/join');
 });
 
+// -----------------------------
+// 4️⃣ Start server
+// -----------------------------
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
 });
