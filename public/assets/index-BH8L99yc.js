@@ -18888,12 +18888,12 @@ const en = () => {
                         variant: "glow",
                         onClick: () => {
                             var o;
-                            return (o = document.getElementById("projects")) == null ? void 0 : o.scrollIntoView({
+                            return (o = document.getElementById("team")) == null ? void 0 : o.scrollIntoView({
                                 behavior: "smooth"
                             })
                         }
                         ,
-                        children: "View Projects"
+                        children: "Meet the Team"
                     })]
                 }), a.jsxs("div", {
                     className: "grid grid-cols-1 sm:grid-cols-3 gap-8 pt-16 max-w-3xl mx-auto",
@@ -18901,7 +18901,7 @@ const en = () => {
                         className: "space-y-2",
                         children: [a.jsx("div", {
                             className: "text-3xl font-bold text-primary font-orbitron",
-                            children: "50+"
+                            children: "30+"
                         }), a.jsx("div", {
                             className: "text-sm text-muted-foreground",
                             children: "Active Members"
@@ -18910,19 +18910,19 @@ const en = () => {
                         className: "space-y-2",
                         children: [a.jsx("div", {
                             className: "text-3xl font-bold text-secondary font-orbitron",
-                            children: "200mph"
+                            children: "5"
                         }), a.jsx("div", {
                             className: "text-sm text-muted-foreground",
-                            children: "Top Speed"
+                            children: "Sensors integrating"
                         })]
                     }), a.jsxs("div", {
                         className: "space-y-2",
                         children: [a.jsx("div", {
                             className: "text-3xl font-bold text-accent font-orbitron",
-                            children: "15ms"
+                            children: "___"
                         }), a.jsx("div", {
                             className: "text-sm text-muted-foreground",
-                            children: "Response Time"
+                            children: "Lines of Code"
                         })]
                     })]
                 })]
@@ -18981,7 +18981,7 @@ const YE = () => {
     }, {
         icon: pl,
         title: "High Performance",
-        description: "Optimized systems achieving sub-20ms response times"
+        description: "Optimized systems achieving ____ response times"
     }, {
         icon: as,
         title: "Competition Ready",
@@ -19026,26 +19026,10 @@ const YE = () => {
                         children: [a.jsxs("div", {
                             children: [a.jsx("div", {
                                 className: "text-3xl font-bold text-primary font-orbitron",
-                                children: "2021"
+                                children: "2025"
                             }), a.jsx("div", {
                                 className: "text-sm text-muted-foreground",
                                 children: "Founded"
-                            })]
-                        }), a.jsxs("div", {
-                            children: [a.jsx("div", {
-                                className: "text-3xl font-bold text-secondary font-orbitron",
-                                children: "12"
-                            }), a.jsx("div", {
-                                className: "text-sm text-muted-foreground",
-                                children: "Competitions"
-                            })]
-                        }), a.jsxs("div", {
-                            children: [a.jsx("div", {
-                                className: "text-3xl font-bold text-accent font-orbitron",
-                                children: "3"
-                            }), a.jsx("div", {
-                                className: "text-sm text-muted-foreground",
-                                children: "Championships"
                             })]
                         })]
                     })]
@@ -19159,94 +19143,6 @@ const XE = "/assets/project1-CawQbjMe.jpg"
         }
     }
     ;
-    return a.jsx("section", {
-        id: "projects",
-        className: "py-20 relative",
-        children: a.jsxs("div", {
-            className: "container mx-auto px-4",
-            children: [a.jsxs("div", {
-                className: "text-center mb-16 space-y-4",
-                children: [a.jsx("h2", {
-                    className: "text-4xl md:text-5xl font-orbitron font-bold",
-                    children: a.jsx("span", {
-                        className: "bg-gradient-secondary bg-clip-text text-transparent",
-                        children: "Featured Projects"
-                    })
-                }), a.jsx("p", {
-                    className: "text-lg text-muted-foreground max-w-3xl mx-auto",
-                    children: "Explore our cutting-edge projects pushing the boundaries of autonomous racing technology."
-                })]
-            }), a.jsx("div", {
-                className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
-                children: t.map( (r, s) => a.jsxs(H, {
-                    className: "group overflow-hidden bg-card hover:bg-card-hover transition-all duration-500 border-border hover:border-primary/50",
-                    children: [a.jsxs("div", {
-                        className: "relative h-48 overflow-hidden",
-                        children: [a.jsx("img", {
-                            src: r.image,
-                            alt: r.title,
-                            className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                        }), a.jsx("div", {
-                            className: "absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"
-                        }), a.jsx(we, {
-                            className: `absolute top-4 right-4 ${n(r.status)}`,
-                            children: r.status
-                        })]
-                    }), a.jsxs("div", {
-                        className: "p-6 space-y-4",
-                        children: [a.jsx("h3", {
-                            className: "text-xl font-semibold group-hover:text-primary transition-colors",
-                            children: r.title
-                        }), a.jsx("p", {
-                            className: "text-muted-foreground text-sm leading-relaxed",
-                            children: r.description
-                        }), a.jsx("div", {
-                            className: "flex flex-wrap gap-2",
-                            children: r.tags.map( (o, i) => a.jsx(we, {
-                                variant: "outline",
-                                className: "text-xs border-muted-foreground/30",
-                                children: o
-                            }, i))
-                        }), a.jsx("div", {
-                            className: "flex gap-2 pt-2",
-                            children: r.isInteractive ? a.jsxs(B, {
-                                size: "sm",
-                                variant: "glow",
-                                className: "w-full",
-                                onClick: () => e(r.link),
-                                children: [a.jsx(sk, {
-                                    className: "mr-2 h-3 w-3"
-                                }), "Play Game"]
-                            }) : a.jsxs(a.Fragment, {
-                                children: [a.jsxs(B, {
-                                    size: "sm",
-                                    variant: "glow",
-                                    className: "flex-1",
-                                    children: [a.jsx(n0, {
-                                        className: "mr-2 h-3 w-3"
-                                    }), "View"]
-                                }), a.jsxs(B, {
-                                    size: "sm",
-                                    variant: "outline",
-                                    className: "flex-1",
-                                    children: [a.jsx(Gl, {
-                                        className: "mr-2 h-3 w-3"
-                                    }), "Code"]
-                                })]
-                            })
-                        })]
-                    })]
-                }, s))
-            }), a.jsx("div", {
-                className: "text-center mt-12",
-                children: a.jsx(B, {
-                    variant: "racing",
-                    size: "lg",
-                    children: "View All Projects"
-                })
-            })]
-        })
-    })
 }
   , r2 = () => {
     const e = g.useRef(null);
