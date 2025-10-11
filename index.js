@@ -24,8 +24,8 @@ app.get('/', (req, res) => {
     res.render('pages/home');
 });
 
-app.get('/people', (req, res) => {
-    res.render('pages/people');
+app.get('/team', (req, res) => {
+    res.render('pages/team');
 });
 
 app.get('/projects', (req, res) => {
@@ -34,6 +34,10 @@ app.get('/projects', (req, res) => {
 
 app.get('/join', (req, res) => {
     res.render('pages/join');
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // -----------------------------

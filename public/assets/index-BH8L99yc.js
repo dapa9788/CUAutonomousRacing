@@ -19373,13 +19373,6 @@ const s2 = () => {
                                         }
                                     })
                                 })]
-                            }), a.jsx(B, {
-                                variant: "racing",
-                                size: "sm",
-                                onClick: () => l(h.id),
-                                disabled: o,
-                                className: "min-w-[80px]",
-                                children: "Vote"
                             })]
                         }, h.id))
                     })]
@@ -19387,21 +19380,21 @@ const s2 = () => {
                     className: "bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6",
                     children: [a.jsx("h3", {
                         className: "text-xl font-semibold mb-4",
-                        children: "Suggest a Name"
+                        children: "Contribute your vote!"
                     }), a.jsxs("div", {
                         className: "flex gap-4",
-                        children: [a.jsx(ut, {
-                            placeholder: "Enter your car name idea...",
-                            value: r,
-                            onChange: h => s(h.target.value),
-                            onKeyPress: h => h.key === "Enter" && c(),
-                            className: "flex-1"
-                        }), a.jsx(B, {
-                            variant: "hero",
-                            onClick: c,
-                            children: "Submit"
+                        children: [
+                            a.jsx("a", {
+                            href: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform", // replace with your form URL
+                            target: "_blank", // optional: opens in a new tab
+                            rel: "noopener noreferrer", // security best practice
+                            children: a.jsx(B, {
+                                variant: "hero",
+                                children: "Vote here"
+                            })
+                            })
+                        ]
                         })]
-                    })]
                 }), a.jsx("p", {
                     className: "text-center mt-8 text-muted-foreground italic",
                     children: "The winning name will officially represent our first car in CU Autonomous Racing history!"
@@ -19562,7 +19555,14 @@ const s2 = () => {
                 }), a.jsx(B, {
                     variant: "racing",
                     size: "lg",
-                    children: "Apply Now"
+                    children: a.jsx(me, {
+                            to: "/join",
+                            onClick: () => {
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                                navigate("/join");
+                            },
+                            children: "Apply now"
+                        })
                 })]
             })]
         })
@@ -19598,134 +19598,6 @@ const s2 = () => {
         variant: "outline",
         link: "/mentors"
     }];
-    return a.jsx("section", {
-        id: "get-involved",
-        className: "py-20 relative",
-        children: a.jsxs("div", {
-            className: "container mx-auto px-4",
-            children: [a.jsxs("div", {
-                className: "text-center mb-16 space-y-4",
-                children: [a.jsx("h2", {
-                    className: "text-4xl md:text-5xl font-orbitron font-bold",
-                    children: a.jsx("span", {
-                        className: "bg-gradient-racing bg-clip-text text-transparent",
-                        children: "Get Involved"
-                    })
-                }), a.jsx("p", {
-                    className: "text-lg text-muted-foreground max-w-3xl mx-auto",
-                    children: "Multiple ways to be part of the autonomous racing revolution. Choose how you want to contribute."
-                })]
-            }), a.jsx("div", {
-                className: "grid md:grid-cols-2 gap-8",
-                children: e.map( (t, n) => a.jsxs(H, {
-                    className: "group p-8 bg-card hover:bg-card-hover transition-all duration-300 border-border hover:border-primary/50 relative overflow-hidden",
-                    children: [a.jsx("div", {
-                        className: "absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-500"
-                    }), a.jsxs("div", {
-                        className: "relative z-10 space-y-4",
-                        children: [a.jsx("div", {
-                            className: "inline-flex p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors",
-                            children: a.jsx(t.icon, {
-                                className: "h-8 w-8 text-primary group-hover:text-primary-glow transition-colors"
-                            })
-                        }), a.jsx("h3", {
-                            className: "text-2xl font-semibold",
-                            children: t.title
-                        }), a.jsx("p", {
-                            className: "text-muted-foreground leading-relaxed",
-                            children: t.description
-                        }), a.jsx(B, {
-                            variant: t.variant,
-                            size: "lg",
-                            className: "w-full sm:w-auto",
-                            asChild: !0,
-                            children: a.jsx(me, {
-                                to: t.link,
-                                children: t.action
-                            })
-                        })]
-                    })]
-                }, n))
-            }), a.jsxs("div", {
-                className: "mt-20",
-                children: [a.jsx("h3", {
-                    className: "text-3xl font-orbitron font-bold text-center mb-12",
-                    children: a.jsx("span", {
-                        className: "bg-gradient-secondary bg-clip-text text-transparent",
-                        children: "Upcoming Events"
-                    })
-                }), a.jsxs("div", {
-                    className: "grid md:grid-cols-3 gap-6",
-                    children: [a.jsx(H, {
-                        className: "p-6 bg-card border-border",
-                        children: a.jsxs("div", {
-                            className: "space-y-3",
-                            children: [a.jsx(we, {
-                                className: "bg-primary/20 text-primary border-primary/30",
-                                children: "Workshop"
-                            }), a.jsx("h4", {
-                                className: "text-lg font-semibold",
-                                children: "Intro to ROS2"
-                            }), a.jsx("p", {
-                                className: "text-sm text-muted-foreground",
-                                children: "March 15, 2024 • 6:00 PM"
-                            }), a.jsx("p", {
-                                className: "text-sm text-muted-foreground",
-                                children: "Engineering Center, Room 265"
-                            })]
-                        })
-                    }), a.jsx(H, {
-                        className: "p-6 bg-card border-border",
-                        children: a.jsxs("div", {
-                            className: "space-y-3",
-                            children: [a.jsx(we, {
-                                className: "bg-secondary/20 text-secondary border-secondary/30",
-                                children: "Competition"
-                            }), a.jsx("h4", {
-                                className: "text-lg font-semibold",
-                                children: "Regional Qualifiers"
-                            }), a.jsx("p", {
-                                className: "text-sm text-muted-foreground",
-                                children: "April 5-7, 2024"
-                            }), a.jsx("p", {
-                                className: "text-sm text-muted-foreground",
-                                children: "Indianapolis Motor Speedway"
-                            })]
-                        })
-                    }), a.jsx(H, {
-                        className: "p-6 bg-card border-border",
-                        children: a.jsxs("div", {
-                            className: "space-y-3",
-                            children: [a.jsx(we, {
-                                className: "bg-accent/20 text-accent border-accent/30",
-                                children: "Info Session"
-                            }), a.jsx("h4", {
-                                className: "text-lg font-semibold",
-                                children: "New Member Orientation"
-                            }), a.jsx("p", {
-                                className: "text-sm text-muted-foreground",
-                                children: "March 20, 2024 • 7:00 PM"
-                            }), a.jsx("p", {
-                                className: "text-sm text-muted-foreground",
-                                children: "Student Union, Ballroom A"
-                            })]
-                        })
-                    })]
-                }), a.jsx("div", {
-                    className: "text-center mt-8",
-                    children: a.jsx(B, {
-                        variant: "outline",
-                        size: "lg",
-                        asChild: !0,
-                        children: a.jsx(me, {
-                            to: "/events",
-                            children: "View All Events"
-                        })
-                    })
-                })]
-            })]
-        })
-    })
 }
   , Ti = g.forwardRef( ({className: e, ...t}, n) => a.jsx("textarea", {
     className: ce("flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50", e),
@@ -19753,224 +19625,97 @@ const l2 = Kl("text-sm font-medium leading-none peer-disabled:cursor-not-allowed
 }));
 Ae.displayName = xx.displayName;
 const c2 = () => {
-    const {toast: e} = Di()
-      , [t,n] = g.useState({
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
-    })
-      , r = l => {
-        l.preventDefault(),
-        e({
-            title: "Message Sent!",
-            description: "We'll get back to you as soon as possible."
-        }),
-        n({
-            name: "",
-            email: "",
-            subject: "",
-            message: ""
-        })
-    }
-      , s = l => {
-        n(c => ({
-            ...c,
-            [l.target.name]: l.target.value
-        }))
-    }
-      , o = [{
-        icon: Ql,
-        label: "Email",
-        value: "team@cuautonomousracing.com",
-        link: "mailto:team@cuautonomousracing.com"
-    }, {
-        icon: Fa,
-        label: "Location",
-        value: "Engineering Center, University of Colorado",
-        link: "#"
-    }, {
-        icon: dk,
-        label: "Phone",
-        value: "+1 (303) 555-0123",
-        link: "tel:+13035550123"
-    }]
-      , i = [{
-        icon: Kh,
-        href: "#",
-        label: "LinkedIn"
-    }, {
-        icon: pk,
-        href: "#",
-        label: "Twitter"
-    }, {
-        icon: lk,
-        href: "#",
-        label: "Instagram"
-    }, {
-        icon: gk,
-        href: "#",
-        label: "YouTube"
-    }];
+    const o = [
+        { icon: Ql, label: "Email", value: "hampton.langenbeck@colorado.edu", link: "mailto:hampton.langenbeck@colorado.edu" },
+        { icon: Fa, label: "Location", value: "Engineering Center, University of Colorado", link: "#" },
+        { icon: dk, label: "Phone", value: "+1 (303) 555-0123", link: "tel:+13035550123" }
+    ];
+
+    const i = [
+        { icon: Kh, href: "#", label: "LinkedIn" },
+        { icon: pk, href: "#", label: "Twitter" },
+        { icon: lk, href: "#", label: "Instagram" },
+        { icon: gk, href: "#", label: "YouTube" }
+    ];
+
     return a.jsx("section", {
         id: "contact",
         className: "py-20 relative",
         children: a.jsxs("div", {
             className: "container mx-auto px-4",
-            children: [a.jsxs("div", {
-                className: "text-center mb-16 space-y-4",
-                children: [a.jsx("h2", {
-                    className: "text-4xl md:text-5xl font-orbitron font-bold",
-                    children: a.jsx("span", {
-                        className: "bg-gradient-primary bg-clip-text text-transparent",
-                        children: "Get In Touch"
+            children: [
+                // Colorful section title
+                a.jsxs("div", {
+                    className: "text-center mb-16 space-y-4",
+                    children: [
+                        a.jsx("h2", {
+                            className: "text-4xl md:text-5xl font-orbitron font-bold",
+                            children: a.jsx("span", {
+                                className: "bg-gradient-primary bg-clip-text text-transparent",
+                                children: "Get In Touch"
+                            })
+                        }),
+                        a.jsx("p", {
+                            className: "text-lg text-muted-foreground max-w-3xl mx-auto",
+                            children: "Have questions? Want to join or sponsor us? We'd love to hear from you."
+                        })
+                    ]
+                }),
+
+                // Contact Information card
+                a.jsx(H, {
+                    className: "p-8 bg-card border-border max-w-2xl mx-auto mb-12",
+                    children: a.jsxs("div", {
+                        children: [
+                            a.jsx("h3", { className: "text-xl font-semibold mb-6", children: "Contact Information" }),
+                            a.jsx("div", {
+                                className: "space-y-4",
+                                children: o.map((l, c) =>
+                                    a.jsxs(
+                                        "a",
+                                        {
+                                            href: l.link,
+                                            className: "flex items-start gap-4 p-3 rounded-lg hover:bg-muted transition-colors group",
+                                            children: [
+                                                a.jsx("div", {
+                                                    className: "p-2 rounded-md bg-primary/10 group-hover:bg-primary/20 transition-colors",
+                                                    children: a.jsx(l.icon, { className: "h-5 w-5 text-primary" })
+                                                }),
+                                                a.jsxs("div", {
+                                                    children: [
+                                                        a.jsx("p", { className: "text-sm text-muted-foreground", children: l.label }),
+                                                        a.jsx("p", { className: "text-foreground font-medium", children: l.value })
+                                                    ]
+                                                })
+                                            ]
+                                        },
+                                        c
+                                    )
+                                )
+                            })
+                        ]
                     })
-                }), a.jsx("p", {
-                    className: "text-lg text-muted-foreground max-w-3xl mx-auto",
-                    children: "Have questions? Want to join or sponsor us? We'd love to hear from you."
-                })]
-            }), a.jsxs("div", {
-                className: "grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto",
-                children: [a.jsx(H, {
-                    className: "p-8 bg-card border-border",
-                    children: a.jsxs("form", {
-                        onSubmit: r,
-                        className: "space-y-6",
-                        children: [a.jsxs("div", {
-                            className: "grid md:grid-cols-2 gap-4",
-                            children: [a.jsxs("div", {
-                                className: "space-y-2",
-                                children: [a.jsx(Ae, {
-                                    htmlFor: "name",
-                                    children: "Name"
-                                }), a.jsx(ut, {
-                                    id: "name",
-                                    name: "name",
-                                    value: t.name,
-                                    onChange: s,
-                                    required: !0,
-                                    className: "bg-input border-border focus:border-primary",
-                                    placeholder: "John Doe"
-                                })]
-                            }), a.jsxs("div", {
-                                className: "space-y-2",
-                                children: [a.jsx(Ae, {
-                                    htmlFor: "email",
-                                    children: "Email"
-                                }), a.jsx(ut, {
-                                    id: "email",
-                                    name: "email",
-                                    type: "email",
-                                    value: t.email,
-                                    onChange: s,
-                                    required: !0,
-                                    className: "bg-input border-border focus:border-primary",
-                                    placeholder: "john@example.com"
-                                })]
-                            })]
-                        }), a.jsxs("div", {
-                            className: "space-y-2",
-                            children: [a.jsx(Ae, {
-                                htmlFor: "subject",
-                                children: "Subject"
-                            }), a.jsx(ut, {
-                                id: "subject",
-                                name: "subject",
-                                value: t.subject,
-                                onChange: s,
-                                required: !0,
-                                className: "bg-input border-border focus:border-primary",
-                                placeholder: "How can we help?"
-                            })]
-                        }), a.jsxs("div", {
-                            className: "space-y-2",
-                            children: [a.jsx(Ae, {
-                                htmlFor: "message",
-                                children: "Message"
-                            }), a.jsx(Ti, {
-                                id: "message",
-                                name: "message",
-                                value: t.message,
-                                onChange: s,
-                                required: !0,
-                                rows: 6,
-                                className: "bg-input border-border focus:border-primary resize-none",
-                                placeholder: "Tell us more about your inquiry..."
-                            })]
-                        }), a.jsxs(B, {
-                            type: "submit",
-                            variant: "racing",
-                            size: "lg",
-                            className: "w-full",
-                            children: [a.jsx(o0, {
-                                className: "mr-2 h-4 w-4"
-                            }), "Send Message"]
-                        })]
-                    })
-                }), a.jsxs("div", {
-                    className: "space-y-8",
-                    children: [a.jsxs(H, {
-                        className: "p-8 bg-card border-border",
-                        children: [a.jsx("h3", {
-                            className: "text-xl font-semibold mb-6",
-                            children: "Contact Information"
-                        }), a.jsx("div", {
-                            className: "space-y-4",
-                            children: o.map( (l, c) => a.jsxs("a", {
-                                href: l.link,
-                                className: "flex items-start gap-4 p-3 rounded-lg hover:bg-muted transition-colors group",
-                                children: [a.jsx("div", {
-                                    className: "p-2 rounded-md bg-primary/10 group-hover:bg-primary/20 transition-colors",
-                                    children: a.jsx(l.icon, {
-                                        className: "h-5 w-5 text-primary"
-                                    })
-                                }), a.jsxs("div", {
-                                    children: [a.jsx("p", {
-                                        className: "text-sm text-muted-foreground",
-                                        children: l.label
-                                    }), a.jsx("p", {
-                                        className: "text-foreground font-medium",
-                                        children: l.value
-                                    })]
-                                })]
-                            }, c))
-                        })]
-                    }), a.jsxs(H, {
-                        className: "p-8 bg-card border-border",
-                        children: [a.jsx("h3", {
-                            className: "text-xl font-semibold mb-6",
-                            children: "Follow Us"
-                        }), a.jsx("div", {
-                            className: "flex gap-4",
-                            children: i.map( (l, c) => a.jsx("a", {
+                }),
+
+                // Compact Follow Us bar
+                a.jsxs("div", {
+                    className: "flex justify-center gap-4",
+                    children: i.map((l, c) =>
+                        a.jsx(
+                            "a",
+                            {
                                 href: l.href,
                                 className: "p-3 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 group",
                                 "aria-label": l.label,
-                                children: a.jsx(l.icon, {
-                                    className: "h-5 w-5"
-                                })
-                            }, c))
-                        })]
-                    }), a.jsxs(H, {
-                        className: "p-8 bg-gradient-dark border-primary/20",
-                        children: [a.jsx("h3", {
-                            className: "text-xl font-semibold mb-4",
-                            children: "Office Hours"
-                        }), a.jsxs("div", {
-                            className: "space-y-2 text-muted-foreground",
-                            children: [a.jsx("p", {
-                                children: "Monday - Friday: 4:00 PM - 8:00 PM"
-                            }), a.jsx("p", {
-                                children: "Saturday: 10:00 AM - 4:00 PM"
-                            }), a.jsx("p", {
-                                children: "Sunday: Closed"
-                            })]
-                        })]
-                    })]
-                })]
-            })]
+                                children: a.jsx(l.icon, { className: "h-5 w-5" })
+                            },
+                            c
+                        )
+                    )
+                })
+            ]
         })
-    })
+    });
 }
   , tn = () => {
     const e = new Date().getFullYear()
