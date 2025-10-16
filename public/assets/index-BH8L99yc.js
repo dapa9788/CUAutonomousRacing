@@ -18685,9 +18685,6 @@ const en = () => {
         href: "/team",
         label: "Team"
     }, {
-        href: "/events",
-        label: "Events"
-    }, {
         href: "/sponsors",
         label: "Sponsors"
     }];
@@ -19776,10 +19773,6 @@ const c2 = () => {
                             className: "text-muted-foreground hover:text-primary transition-colors",
                             children: "Team"
                         }), a.jsx(me, {
-                            to: "/events",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
-                            children: "Events"
-                        }), a.jsx(me, {
                             to: "/sponsors",
                             className: "text-muted-foreground hover:text-primary transition-colors",
                             children: "Sponsors"
@@ -19922,7 +19915,7 @@ const c2 = () => {
                     children: [a.jsx(we, {
                         variant: "outline",
                         className: "mt-1",
-                        children: "2024"
+                        children: "2025"
                     }), a.jsxs("div", {
                         children: [a.jsx("h3", {
                             className: "font-bold mb-2",
@@ -20294,7 +20287,7 @@ const c2 = () => {
                         size: "lg",
                         asChild: !0,
                         children: a.jsx(me, {
-                            to: "/contact",
+                            link: "mailto:hampton.langenbeck@colorado.edu",
                             children: "Contact Us"
                         })
                     })]
@@ -20923,10 +20916,6 @@ const P2 = () => {
                             to: "/join",
                             children: "Join a Project"
                         })
-                    }), a.jsx(B, {
-                        variant: "outline",
-                        size: "lg",
-                        children: "View Publications"
                     })]
                 })]
             })

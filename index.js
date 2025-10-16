@@ -36,8 +36,16 @@ app.get('/join', (req, res) => {
     res.render('pages/join');
 });
 
+app.get('/about', (req, res) => {
+    res.render('pages/about');
+});
+
+app.get('/sponsors', (req, res) => {
+    res.render('pages/sponsors');
+});
+
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.redirect('/');
 });
 
 // -----------------------------
