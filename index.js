@@ -36,9 +36,6 @@ app.get('/join', (req, res) => {
     res.render('pages/join');
 });
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
 
 // -----------------------------
 // 4️⃣ Start server
