@@ -20026,7 +20026,7 @@ const c2 = () => {
                         size: "lg",
                         asChild: !0,
                         children: a.jsx(me, {
-                            to: "#contact",
+                            href: "mailto:hampton.langenbeck@colorado.edu",
                             children: "Contact Us"
                         })
                     })]
@@ -20219,6 +20219,34 @@ const c2 = () => {
             email: "lisa@curacing.com"
         }]
     }, {
+        name: "Electrical & Sensors",
+        description: "Building and optimizing the physical racing platform",
+        members: [{
+            name: "Emily Rodriguez",
+            role: "Lead Mechanical Engineer",
+            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=emily",
+            skills: ["CAD", "3D Printing", "Aerodynamics"],
+            linkedin: "#",
+            github: "#",
+            email: "emily@curacing.com"
+        }, {
+            name: "David Kim",
+            role: "Hardware Engineer",
+            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=david",
+            skills: ["PCB Design", "Embedded Systems", "Sensors"],
+            linkedin: "#",
+            github: "#",
+            email: "david@curacing.com"
+        }, {
+            name: "Lisa Thompson",
+            role: "Systems Integration",
+            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=lisa",
+            skills: ["Testing", "Validation", "Documentation"],
+            linkedin: "#",
+            github: "#",
+            email: "lisa@curacing.com"
+        }]
+    }, {
         name: "Operations & Business",
         description: "Managing partnerships, events, and team growth",
         members: [{
@@ -20287,7 +20315,7 @@ const c2 = () => {
                         size: "lg",
                         asChild: !0,
                         children: a.jsx(me, {
-                            link: "mailto:hampton.langenbeck@colorado.edu",
+                            href: "mailto:hampton.langenbeck@colorado.edu",
                             children: "Contact Us"
                         })
                     })]
@@ -20301,16 +20329,16 @@ const c2 = () => {
                     className: "grid grid-cols-2 md:grid-cols-4 gap-6",
                     children: [{
                         label: "Active Members",
-                        value: "45+"
+                        value: "30+"
                     }, {
                         label: "Departments",
                         value: "3"
                     }, {
-                        label: "Advisors",
-                        value: "2"
+                        label: "Team Leads",
+                        value: "4"
                     }, {
-                        label: "Alumni",
-                        value: "100+"
+                        label: "Subteams",
+                        value: "4"
                     }].map( (n, r) => a.jsxs(H, {
                         className: "p-6 text-center bg-gradient-card border-primary/20",
                         children: [a.jsx("p", {
@@ -20461,7 +20489,7 @@ const c2 = () => {
                             size: "lg",
                             asChild: !0,
                             children: a.jsx(me, {
-                                to: "/contact",
+                                to: "/about",
                                 children: "Learn More"
                             })
                         })]
@@ -30145,20 +30173,26 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
         name: "Software & AI",
         icon: nk,
         description: "Work on autonomous driving algorithms, computer vision, and control systems",
-        skills: ["Python", "C++", "ROS", "Machine Learning", "Computer Vision"],
-        openRoles: ["Software Engineer", "AI Researcher", "Perception Engineer"]
+        skills: ["tbd"],
+        openRoles: ["tbd"]
     }, {
         name: "Hardware & Mechanical",
         icon: mk,
         description: "Design and build the physical racing platform and electronic systems",
-        skills: ["CAD", "3D Printing", "Electronics", "PCB Design", "Mechanical Design"],
-        openRoles: ["Mechanical Engineer", "Hardware Engineer", "Electronics Specialist"]
+        skills: ["tbd"],
+        openRoles: ["tbd"]
+    }, {
+        name: "Electrical & Sensors",
+        icon: mk,
+        description: "Develop and integrate the car’s electrical systems, including power distribution, sensors, and signal processing for autonomous control.",
+        skills: ["tbd"],
+        openRoles: ["tbd"]
     }, {
         name: "Operations & Business",
         icon: Zy,
         description: "Manage team operations, sponsorships, events, and outreach",
-        skills: ["Project Management", "Marketing", "Finance", "Event Planning", "Communications"],
-        openRoles: ["Project Manager", "Marketing Lead", "Finance Manager", "Event Coordinator"]
+        skills: ["tbd"],
+        openRoles: ["tbd"]
     }]
       , s = ["Hands-on experience with cutting-edge technology", "Networking with industry professionals", "Competition participation and travel opportunities", "Portfolio projects for career advancement", "Mentorship from faculty and alumni", "Access to advanced lab facilities and equipment"]
       , o = async l => {
@@ -30438,6 +30472,9 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                                         }), a.jsx(nt, {
                                             value: "hardware",
                                             children: "Hardware & Mechanical"
+                                        }), a.jsx(nt, {
+                                            value: "electrical",
+                                            children: "Electrical & Sensors"
                                         }), a.jsx(nt, {
                                             value: "operations",
                                             children: "Operations & Business"
