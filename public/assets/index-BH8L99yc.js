@@ -18679,9 +18679,6 @@ const en = () => {
         href: "/about",
         label: "About"
     }, {
-        href: "/projects",
-        label: "Projects"
-    }, {
         href: "/team",
         label: "Team"
     }, {
@@ -19461,9 +19458,9 @@ const l2 = Kl("text-sm font-medium leading-none peer-disabled:cursor-not-allowed
 Ae.displayName = xx.displayName;
 const c2 = () => {
     const o = [
-        { icon: Ql, label: "Email", value: "hampton.langenbeck@colorado.edu", link: "mailto:hampton.langenbeck@colorado.edu" },
-        { icon: Fa, label: "Location", value: "Engineering Center, University of Colorado", link: "#" },
-        { icon: dk, label: "Phone", value: "+1 (303) 555-0123", link: "tel:+13035550123" }
+        { icon: Ql, label: "Email", value: "cuautonomousracing@colorado.edu", link: "mailto:cuautonomousracing@colorado.edu" },
+        { icon: Fa, label: "Location", value: "ECES 112 @ Engineering Center, University of Colorado", link: "#" },
+        { icon: dk, label: "Time", value: "Meetings Sundays @ 2:30PM" }
     ];
 
     const i = [
