@@ -20054,128 +20054,60 @@ const c2 = () => {
         name: "Software & AI",
         description: "Developing autonomous driving algorithms and control systems",
         members: [{
-            name: "Alex Chen",
-            role: "Lead Software Engineer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=alex",
+            name: "Alexander",
+            role: "Software Team Lead",
+            image: "assets/alexander.jpg",
             skills: ["Python", "ROS", "Computer Vision"],
             linkedin: "#",
             github: "#",
             email: "alex@curacing.com"
-        }, {
-            name: "Sarah Johnson",
-            role: "AI Engineer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah",
-            skills: ["Machine Learning", "TensorFlow", "SLAM"],
-            linkedin: "#",
-            github: "#",
-            email: "sarah@curacing.com"
-        }, {
-            name: "Marcus Williams",
-            role: "Perception Engineer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=marcus",
-            skills: ["LiDAR", "Sensor Fusion", "C++"],
-            linkedin: "#",
-            github: "#",
-            email: "marcus@curacing.com"
         }]
     }, {
         name: "Hardware & Mechanical",
         description: "Building and optimizing the physical racing platform",
         members: [{
-            name: "Emily Rodriguez",
-            role: "Lead Mechanical Engineer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=emily",
+            name: "Lincoln",
+            role: "Mechanical Team Lead",
+            image: "assets/lincoln.png",
             skills: ["CAD", "3D Printing", "Aerodynamics"],
             linkedin: "#",
             github: "#",
             email: "emily@curacing.com"
-        }, {
-            name: "David Kim",
-            role: "Hardware Engineer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=david",
-            skills: ["PCB Design", "Embedded Systems", "Sensors"],
-            linkedin: "#",
-            github: "#",
-            email: "david@curacing.com"
-        }, {
-            name: "Lisa Thompson",
-            role: "Systems Integration",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=lisa",
-            skills: ["Testing", "Validation", "Documentation"],
-            linkedin: "#",
-            github: "#",
-            email: "lisa@curacing.com"
         }]
     }, {
         name: "Electrical & Sensors",
         description: "Building and optimizing the physical racing platform",
         members: [{
-            name: "Emily Rodriguez",
-            role: "Lead Mechanical Engineer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=emily",
+            name: "Gabriel",
+            role: "Lead Electrical Engineer & Chief Engineer",
+            image: "assets/gabe.jpg",
             skills: ["CAD", "3D Printing", "Aerodynamics"],
             linkedin: "#",
             github: "#",
             email: "emily@curacing.com"
-        }, {
-            name: "David Kim",
-            role: "Hardware Engineer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=david",
-            skills: ["PCB Design", "Embedded Systems", "Sensors"],
-            linkedin: "#",
-            github: "#",
-            email: "david@curacing.com"
-        }, {
-            name: "Lisa Thompson",
-            role: "Systems Integration",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=lisa",
-            skills: ["Testing", "Validation", "Documentation"],
-            linkedin: "#",
-            github: "#",
-            email: "lisa@curacing.com"
         }]
     }, {
         name: "Operations & Business",
         description: "Managing partnerships, events, and team growth",
         members: [{
-            name: "James Wilson",
-            role: "Team Captain",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=james",
+            name: "Hampton",
+            role: "President",
+            image: "assets/hampton.jpg",
             skills: ["Leadership", "Strategy", "Communication"],
             linkedin: "#",
             github: "#",
             email: "james@curacing.com"
         }, {
-            name: "Rachel Green",
+            name: "Alexa",
             role: "Sponsorship Manager",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=rachel",
+            image: "assets/alexa.jpg",
             skills: ["Business Development", "Marketing", "Events"],
             linkedin: "#",
             github: "#",
             email: "rachel@curacing.com"
-        }, {
-            name: "Michael Brown",
-            role: "Finance Manager",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=michael",
-            skills: ["Budgeting", "Fundraising", "Analytics"],
-            linkedin: "#",
-            github: "#",
-            email: "michael@curacing.com"
         }]
     }]
-      , t = [{
-        name: "Dr. Jennifer Smith",
-        role: "Faculty Advisor",
-        department: "Computer Science",
-        image: "https://api.dicebear.com/7.x/avataaars/svg?seed=jennifer",
-        expertise: ["Robotics", "AI", "Autonomous Systems"]
-    }, {
-        name: "Prof. Robert Zhang",
-        role: "Technical Advisor",
-        department: "Mechanical Engineering",
-        image: "https://api.dicebear.com/7.x/avataaars/svg?seed=robert",
-        expertise: ["Vehicle Dynamics", "Control Systems", "Optimization"]
-    }];
+      , t = [];
     return a.jsxs("div", {
         className: "min-h-screen bg-background",
         children: [a.jsx(en, {}), a.jsx("section", {
@@ -20305,50 +20237,6 @@ const c2 = () => {
                 })]
             })
         }, r)), a.jsx("section", {
-            className: "py-16 px-4 bg-gradient-dark",
-            children: a.jsxs("div", {
-                className: "container mx-auto",
-                children: [a.jsx("h2", {
-                    className: "text-3xl font-orbitron font-bold text-center mb-12",
-                    children: "Faculty Advisors"
-                }), a.jsx("div", {
-                    className: "grid md:grid-cols-2 gap-6 max-w-4xl mx-auto",
-                    children: t.map( (n, r) => a.jsx(H, {
-                        className: "p-6 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all",
-                        children: a.jsxs("div", {
-                            className: "flex items-start gap-4",
-                            children: [a.jsx("div", {
-                                className: "w-20 h-20 rounded-full overflow-hidden ring-2 ring-primary/20",
-                                children: a.jsx("img", {
-                                    src: n.image,
-                                    alt: n.name,
-                                    className: "w-full h-full object-cover"
-                                })
-                            }), a.jsxs("div", {
-                                className: "flex-1",
-                                children: [a.jsx("h3", {
-                                    className: "text-xl font-bold",
-                                    children: n.name
-                                }), a.jsx("p", {
-                                    className: "text-sm text-primary mb-1",
-                                    children: n.role
-                                }), a.jsx("p", {
-                                    className: "text-sm text-muted-foreground mb-3",
-                                    children: n.department
-                                }), a.jsx("div", {
-                                    className: "flex flex-wrap gap-2",
-                                    children: n.expertise.map( (s, o) => a.jsx(we, {
-                                        variant: "outline",
-                                        className: "text-xs",
-                                        children: s
-                                    }, o))
-                                })]
-                            })]
-                        })
-                    }, r))
-                })]
-            })
-        }), a.jsx("section", {
             className: "py-16 px-4",
             children: a.jsx("div", {
                 className: "container mx-auto",

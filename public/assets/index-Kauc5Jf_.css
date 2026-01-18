@@ -3228,6 +3228,10 @@ body {
     }
 }
 
+#teams .team-card {
+  margin: 0 auto;
+}
+
 .data-\[state\=open\]\:animate-accordion-down[data-state=open] {
     animation: accordion-down .2s ease-out
 }
