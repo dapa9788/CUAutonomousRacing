@@ -19325,11 +19325,11 @@ const s2 = () => {
                         className: "flex gap-4",
                         children: [
                             a.jsx("a", {
-                            href: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform", // replace with your form URL
+                            href: "https://docs.google.com/forms/d/e/1FAIpQLSdnx39haPYg_5u9KUd_yqJAnO_g1xA2cDw8-tlyWjKSXzsDVg/viewform?usp=publish-editor", // replace with your form URL
                             target: "_blank", // optional: opens in a new tab
                             rel: "noopener noreferrer", // security best practice
                             children: a.jsx(B, {
-                                variant: "hero",
+                                variant: "secondary",
                                 children: "Vote here"
                             })
                             })
@@ -20042,7 +20042,7 @@ const c2 = () => {
             email: "james@curacing.com"
         }, {
             name: "Alexa",
-            role: "Sponsorship Manager",
+            role: "Business Team Lead",
             image: "assets/alexa.jpg",
             skills: ["Business Development", "Marketing", "Events"],
             linkedin: "#",

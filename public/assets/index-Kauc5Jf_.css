@@ -310,15 +310,19 @@ img,video {
 :root {
     --background: 220 20% 4%;
     --foreground: 210 20% 98%;
-    --primary: 200 100% 50%;
+    
+    --primary: 0 0% 100%;
     --primary-foreground: 220 20% 4%;
-    --primary-glow: 200 100% 60%;
-    --secondary: 0 100% 50%;
-    --secondary-foreground: 0 0% 100%;
-    --secondary-glow: 0 100% 60%;
-    --accent: 180 100% 50%;
+
+    --accent: 0 0% 95%;
     --accent-foreground: 220 20% 4%;
-    --accent-glow: 180 100% 60%;
+
+    --secondary: 0 0% 85%;
+    --secondary-foreground: 220 20% 4%;
+
+    --primary-glow: 0 0% 100%;
+    --accent-glow: 0 0% 95%;
+    --secondary-glow: 0 0% 90%;
     --card: 220 15% 10%;
     --card-foreground: 210 20% 98%;
     --card-hover: 220 15% 15%;
@@ -3226,10 +3230,6 @@ body {
     to {
         height: var(--radix-accordion-content-height)
     }
-}
-
-#teams .team-card {
-  margin: 0 auto;
 }
 
 .data-\[state\=open\]\:animate-accordion-down[data-state=open] {
