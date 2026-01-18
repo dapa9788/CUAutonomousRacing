@@ -19175,61 +19175,7 @@ const XE = "/assets/project1-CawQbjMe.jpg"
         id: 4,
         name: "SponsorFour",
         placeholder: "Reserved for Future Partner"
-    }];
-    return a.jsx("section", {
-        id: "sponsors",
-        className: "py-20 relative overflow-hidden",
-        children: a.jsxs("div", {
-            className: "container mx-auto px-4",
-            ref: e,
-            children: [a.jsxs("div", {
-                className: "text-center mb-12",
-                children: [a.jsx("h2", {
-                    className: "text-4xl md:text-5xl font-orbitron font-bold mb-6",
-                    children: a.jsx("span", {
-                        className: "bg-gradient-primary bg-clip-text text-transparent",
-                        children: "Future Sponsors"
-                    })
-                }), a.jsx("p", {
-                    className: "text-lg text-muted-foreground max-w-3xl mx-auto",
-                    children: "Our sponsors fuel innovation. As CU Autonomous Racing grows, this wall will showcase the partners who help drive us forward."
-                })]
-            }), a.jsx("div", {
-                className: "grid grid-cols-2 md:grid-cols-4 gap-8",
-                children: t.map( (n, r) => a.jsx("div", {
-                    className: "sponsor-card opacity-0 group relative",
-                    style: {
-                        animationDelay: `${r * .1}s`
-                    },
-                    children: a.jsxs("div", {
-                        className: "relative overflow-hidden rounded-lg bg-card/50 backdrop-blur-sm border border-border p-8 h-48 flex flex-col items-center justify-center transition-all duration-500 hover:border-primary hover:shadow-neon-blue hover:scale-105",
-                        children: [a.jsxs("div", {
-                            className: "absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500",
-                            children: [a.jsx("div", {
-                                className: "absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent animate-racing-streak"
-                            }), a.jsx("div", {
-                                className: "absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent animate-racing-streak-delayed"
-                            }), a.jsx("div", {
-                                className: "absolute left-0 top-0 h-full w-0.5 bg-gradient-to-b from-transparent via-primary to-transparent animate-racing-streak-vertical"
-                            }), a.jsx("div", {
-                                className: "absolute right-0 top-0 h-full w-0.5 bg-gradient-to-b from-transparent via-primary to-transparent animate-racing-streak-vertical-delayed"
-                            })]
-                        }), a.jsx("div", {
-                            className: "absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                        }), a.jsx("div", {
-                            className: "relative z-10 w-24 h-24 rounded-full bg-gradient-primary flex items-center justify-center mb-4 group-hover:animate-pulse",
-                            children: a.jsx(pl, {
-                                className: "w-12 h-12 text-primary-foreground"
-                            })
-                        }), a.jsx("p", {
-                            className: "text-sm text-muted-foreground text-center relative z-10",
-                            children: n.placeholder
-                        })]
-                    })
-                }, n.id))
-            })]
-        })
-    })
+    }]
 }
   , ut = g.forwardRef( ({className: e, type: t, ...n}, r) => a.jsx("input", {
     type: t,
