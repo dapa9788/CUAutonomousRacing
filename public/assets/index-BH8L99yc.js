@@ -18885,12 +18885,12 @@ const en = () => {
                         variant: "glow",
                         onClick: () => {
                             var o;
-                            return (o = document.getElementById("team")) == null ? void 0 : o.scrollIntoView({
+                            return (o = document.getElementById("car-poll")) == null ? void 0 : o.scrollIntoView({
                                 behavior: "smooth"
                             })
                         }
                         ,
-                        children: "Meet the Team"
+                        children: "Name our First Car"
                     })]
                 }), a.jsxs("div", {
                     className: "grid grid-cols-1 sm:grid-cols-3 gap-8 pt-16 max-w-3xl mx-auto",
@@ -19176,60 +19176,7 @@ const XE = "/assets/project1-CawQbjMe.jpg"
         name: "SponsorFour",
         placeholder: "Reserved for Future Partner"
     }];
-    return a.jsx("section", {
-        id: "sponsors",
-        className: "py-20 relative overflow-hidden",
-        children: a.jsxs("div", {
-            className: "container mx-auto px-4",
-            ref: e,
-            children: [a.jsxs("div", {
-                className: "text-center mb-12",
-                children: [a.jsx("h2", {
-                    className: "text-4xl md:text-5xl font-orbitron font-bold mb-6",
-                    children: a.jsx("span", {
-                        className: "bg-gradient-primary bg-clip-text text-transparent",
-                        children: "Future Sponsors"
-                    })
-                }), a.jsx("p", {
-                    className: "text-lg text-muted-foreground max-w-3xl mx-auto",
-                    children: "Our sponsors fuel innovation. As CU Autonomous Racing grows, this wall will showcase the partners who help drive us forward."
-                })]
-            }), a.jsx("div", {
-                className: "grid grid-cols-2 md:grid-cols-4 gap-8",
-                children: t.map( (n, r) => a.jsx("div", {
-                    className: "sponsor-card opacity-0 group relative",
-                    style: {
-                        animationDelay: `${r * .1}s`
-                    },
-                    children: a.jsxs("div", {
-                        className: "relative overflow-hidden rounded-lg bg-card/50 backdrop-blur-sm border border-border p-8 h-48 flex flex-col items-center justify-center transition-all duration-500 hover:border-primary hover:shadow-neon-blue hover:scale-105",
-                        children: [a.jsxs("div", {
-                            className: "absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500",
-                            children: [a.jsx("div", {
-                                className: "absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent animate-racing-streak"
-                            }), a.jsx("div", {
-                                className: "absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent animate-racing-streak-delayed"
-                            }), a.jsx("div", {
-                                className: "absolute left-0 top-0 h-full w-0.5 bg-gradient-to-b from-transparent via-primary to-transparent animate-racing-streak-vertical"
-                            }), a.jsx("div", {
-                                className: "absolute right-0 top-0 h-full w-0.5 bg-gradient-to-b from-transparent via-primary to-transparent animate-racing-streak-vertical-delayed"
-                            })]
-                        }), a.jsx("div", {
-                            className: "absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                        }), a.jsx("div", {
-                            className: "relative z-10 w-24 h-24 rounded-full bg-gradient-primary flex items-center justify-center mb-4 group-hover:animate-pulse",
-                            children: a.jsx(pl, {
-                                className: "w-12 h-12 text-primary-foreground"
-                            })
-                        }), a.jsx("p", {
-                            className: "text-sm text-muted-foreground text-center relative z-10",
-                            children: n.placeholder
-                        })]
-                    })
-                }, n.id))
-            })]
-        })
-    })
+    
 }
   , ut = g.forwardRef( ({className: e, type: t, ...n}, r) => a.jsx("input", {
     type: t,
@@ -19456,114 +19403,6 @@ const s2 = () => {
         github: "#",
         email: "lisa@example.com"
     }];
-    return a.jsx("section", {
-        id: "team",
-        className: "py-20 relative",
-        children: a.jsxs("div", {
-            className: "container mx-auto px-4",
-            children: [a.jsxs("div", {
-                className: "text-center mb-16 space-y-4",
-                children: [a.jsx("h2", {
-                    className: "text-4xl md:text-5xl font-orbitron font-bold",
-                    children: a.jsx("span", {
-                        className: "bg-gradient-primary bg-clip-text text-transparent",
-                        children: "Meet Our Team"
-                    })
-                }), a.jsx("p", {
-                    className: "text-lg text-muted-foreground max-w-3xl mx-auto",
-                    children: "Brilliant minds from diverse engineering disciplines working together to revolutionize autonomous racing."
-                })]
-            }), a.jsx("div", {
-                className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
-                children: e.map( (t, n) => a.jsx(H, {
-                    className: "group p-6 bg-card hover:bg-card-hover transition-all duration-300 border-border hover:border-primary/50",
-                    children: a.jsxs("div", {
-                        className: "flex flex-col items-center text-center space-y-4",
-                        children: [a.jsxs("div", {
-                            className: "relative",
-                            children: [a.jsx("div", {
-                                className: "w-24 h-24 rounded-full overflow-hidden bg-gradient-primary p-[2px]",
-                                children: a.jsx("img", {
-                                    src: t.image,
-                                    alt: t.name,
-                                    className: "w-full h-full rounded-full bg-background object-cover"
-                                })
-                            }), a.jsx("div", {
-                                className: "absolute -bottom-2 -right-2 w-6 h-6 bg-primary rounded-full flex items-center justify-center",
-                                children: a.jsx("span", {
-                                    className: "text-xs text-primary-foreground font-bold",
-                                    children: n + 1
-                                })
-                            })]
-                        }), a.jsxs("div", {
-                            className: "space-y-2",
-                            children: [a.jsx("h3", {
-                                className: "text-lg font-semibold",
-                                children: t.name
-                            }), a.jsx("p", {
-                                className: "text-sm text-primary",
-                                children: t.role
-                            }), a.jsx("p", {
-                                className: "text-xs text-muted-foreground",
-                                children: t.department
-                            })]
-                        }), a.jsx("div", {
-                            className: "flex flex-wrap gap-2 justify-center",
-                            children: t.skills.map( (r, s) => a.jsx(we, {
-                                variant: "outline",
-                                className: "text-xs border-muted-foreground/30",
-                                children: r
-                            }, s))
-                        }), a.jsxs("div", {
-                            className: "flex gap-3 pt-2",
-                            children: [a.jsx("a", {
-                                href: t.linkedin,
-                                className: "p-2 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300",
-                                "aria-label": `${t.name}'s LinkedIn`,
-                                children: a.jsx(Kh, {
-                                    className: "h-4 w-4"
-                                })
-                            }), a.jsx("a", {
-                                href: t.github,
-                                className: "p-2 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300",
-                                "aria-label": `${t.name}'s GitHub`,
-                                children: a.jsx(Gl, {
-                                    className: "h-4 w-4"
-                                })
-                            }), a.jsx("a", {
-                                href: `mailto:${t.email}`,
-                                className: "p-2 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300",
-                                "aria-label": `Email ${t.name}`,
-                                children: a.jsx(Ql, {
-                                    className: "h-4 w-4"
-                                })
-                            })]
-                        })]
-                    })
-                }, n))
-            }), a.jsxs(H, {
-                className: "mt-16 p-8 bg-gradient-dark border-primary/20 text-center",
-                children: [a.jsx("h3", {
-                    className: "text-2xl font-semibold mb-4",
-                    children: "Want to Join Our Team?"
-                }), a.jsx("p", {
-                    className: "text-muted-foreground mb-6 max-w-2xl mx-auto",
-                    children: "We're always looking for passionate individuals who want to push the boundaries of technology. No matter your experience level, if you're excited about autonomous racing, we want to hear from you!"
-                }), a.jsx(B, {
-                    variant: "racing",
-                    size: "lg",
-                    children: a.jsx(me, {
-                            to: "/join",
-                            onClick: () => {
-                                window.scrollTo({ top: 0, behavior: "smooth" });
-                                navigate("/join");
-                            },
-                            children: "Apply now"
-                        })
-                })]
-            })]
-        })
-    })
 }
   , i2 = () => {
     const e = [{
@@ -19629,10 +19468,6 @@ const c2 = () => {
     ];
 
     const i = [
-        { icon: Kh, href: "#", label: "LinkedIn" },
-        { icon: pk, href: "#", label: "Twitter" },
-        { icon: lk, href: "#", label: "Instagram" },
-        { icon: gk, href: "#", label: "YouTube" }
     ];
 
     return a.jsx("section", {
