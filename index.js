@@ -3,12 +3,11 @@ const { engine } = require('express-handlebars');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
 
 // -----------------------------
 // 1️⃣ Serve static files
 // -----------------------------
-app.use(express.static(path.join(__dirname, 'public'))); 
+app.use(express.static(path.join(__dirname, 'public')));
 
 // -----------------------------
 // 2️⃣ Handlebars setup
@@ -21,36 +20,44 @@ app.set('views', path.join(__dirname, 'views'));
 // 3️⃣ Routes
 // -----------------------------
 app.get('/', (req, res) => {
-    res.render('pages/home');
+  res.render('pages/home');
 });
 
 app.get('/team', (req, res) => {
-    res.render('pages/team');
+  res.render('pages/team');
 });
 
 app.get('/projects', (req, res) => {
-    res.render('pages/projects');
+  res.render('pages/projects');
 });
 
 app.get('/join', (req, res) => {
-    res.render('pages/join');
+  res.render('pages/join');
 });
 
 app.get('/about', (req, res) => {
-    res.render('pages/about');
+  res.render('pages/about');
 });
 
 app.get('/sponsors', (req, res) => {
-    res.render('pages/sponsors');
+  res.render('pages/sponsors');
 });
 
 app.get('*', (req, res) => {
-    res.redirect('/');
+  res.redirect('/');
 });
 
 // -----------------------------
-// 4️⃣ Start server
+// 4️⃣ Export app (IMPORTANT)
 // -----------------------------
-app.listen(PORT, '0.0.0.0', () => {
+module.exports = app;
+
+// -----------------------------
+// 5️⃣ Only listen locally (Docker/dev)
+// -----------------------------
+if (require.main === module) {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
-});
+  });
+}
