@@ -20128,7 +20128,7 @@ const c2 = () => {
                         children: n.description
                     })]
                 }), a.jsx("div", {
-                    className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6",
+                    className: "grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-6 justify-items-center",
                     children: n.members.map( (s, o) => a.jsx(H, {
                         className: "p-6 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all hover:scale-105 group",
                         children: a.jsxs("div", {
