@@ -19570,13 +19570,13 @@ const c2 = () => {
                     className: "flex flex-wrap gap-6 text-sm",
                     children: n ? a.jsxs(a.Fragment, {
                         children: [a.jsx("a", {
+                            href: "#home",
+                            className: "text-muted-foreground hover:text-primary transition-colors",
+                            children: "Home"
+                        }), a.jsx("a", {
                             href: "#about",
                             className: "text-muted-foreground hover:text-primary transition-colors",
                             children: "About"
-                        }), a.jsx("a", {
-                            href: "#projects",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
-                            children: "Projects"
                         }), a.jsx("a", {
                             href: "#team",
                             className: "text-muted-foreground hover:text-primary transition-colors",
@@ -19596,9 +19596,9 @@ const c2 = () => {
                             className: "text-muted-foreground hover:text-primary transition-colors",
                             children: "Home"
                         }), a.jsx(me, {
-                            to: "/projects",
+                            to: "/about",
                             className: "text-muted-foreground hover:text-primary transition-colors",
-                            children: "Projects"
+                            children: "About"
                         }), a.jsx(me, {
                             to: "/team",
                             className: "text-muted-foreground hover:text-primary transition-colors",
