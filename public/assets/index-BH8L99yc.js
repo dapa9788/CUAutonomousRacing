@@ -20041,7 +20041,7 @@ const c2 = () => {
             github: "#",
             email: "james@curacing.com"
         }, {
-            name: "Alexa",
+            name: "Frida",
             role: "Business Team Lead",
             image: "assets/alexa.jpg",
             skills: ["Business Development", "Marketing", "Events"],
