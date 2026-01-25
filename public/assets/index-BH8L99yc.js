@@ -2618,7 +2618,7 @@ var B1 = Ce({}, Mi, {
     tiltY: 0,
     twist: 0,
     pointerType: 0,
-    isPrimary: 0
+    iswarning: 0
 })
   , Qf = jt(V1)
   , H1 = Ce({}, Mi, {
@@ -4598,7 +4598,7 @@ function ol(e) {
 var Dc = [];
 function Sh() {
     for (var e = 0; e < Dc.length; e++)
-        Dc[e]._workInProgressVersionPrimary = null;
+        Dc[e]._workInProgressVersionwarning = null;
     Dc.length = 0
 }
 var Ra = On.ReactCurrentDispatcher
@@ -13739,7 +13739,7 @@ const P_ = ({...e}) => {
             classNames: {
                 toast: "group toast group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg",
                 description: "group-[.toast]:text-muted-foreground",
-                actionButton: "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground",
+                actionButton: "group-[.toast]:bg-warning group-[.toast]:text-warning-foreground",
                 cancelButton: "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground"
             }
         },
@@ -18702,9 +18702,9 @@ const en = () => {
                     className: "hidden md:flex items-center gap-8",
                     children: [s.map(o => a.jsxs(me, {
                         to: o.href,
-                        className: "text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group",
+                        className: "text-sm font-medium text-muted-foreground hover:text-warning transition-colors relative group",
                         children: [o.label, a.jsx("span", {
-                            className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+                            className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-warning transition-all duration-300 group-hover:w-full"
                         })]
                     }, o.href)), a.jsx(B, {
                         variant: "racing",
@@ -18728,7 +18728,7 @@ const en = () => {
                     children: [s.map(o => a.jsx(me, {
                         to: o.href,
                         onClick: () => r(!1),
-                        className: "text-sm font-medium text-muted-foreground hover:text-primary transition-colors",
+                        className: "text-sm font-medium text-muted-foreground hover:text-warning transition-colors",
                         children: o.label
                     }, o.href)), a.jsx(B, {
                         variant: "racing",
@@ -18824,7 +18824,7 @@ const en = () => {
             children: a.jsxs("div", {
                 className: "space-y-8 animate-fade-in",
                 children: [a.jsxs("div", {
-                    className: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm",
+                    className: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-warning/10 border border-warning/20 backdrop-blur-sm",
                     children: [a.jsxs("span", {
                         className: "relative flex h-2 w-2",
                         children: [a.jsx("span", {
@@ -18923,7 +18923,7 @@ const en = () => {
             className: "absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce",
             "aria-label": "Scroll to next section",
             children: a.jsx(qh, {
-                className: "h-8 w-8 text-warning"
+                className: "h-8 w-8 text-yellow-500 fill-current stroke-current"
             })
         })]
     })
@@ -18992,7 +18992,7 @@ const YE = () => {
                 children: [a.jsx("h2", {
                     className: "text-4xl md:text-5xl font-orbitron font-bold",
                     children: a.jsx("span", {
-                        className: "bg-gradient-primary bg-clip-text text-transparent",
+                        className: "bg-gradient-warning bg-clip-text text-transparent",
                         children: "About Our Mission"
                     })
                 }), a.jsx("p", {
@@ -19016,7 +19016,7 @@ const YE = () => {
                         className: "flex gap-8 pt-4",
                         children: [a.jsxs("div", {
                             children: [a.jsx("div", {
-                                className: "text-3xl font-bold text-primary font-orbitron",
+                                className: "text-3xl font-bold text-warning font-orbitron",
                                 children: "2025"
                             }), a.jsx("div", {
                                 className: "text-sm text-muted-foreground",
@@ -19027,9 +19027,9 @@ const YE = () => {
                 }), a.jsx("div", {
                     className: "grid grid-cols-2 gap-4",
                     children: e.map( (t, n) => a.jsxs(H, {
-                        className: "p-6 bg-card hover:bg-card-hover transition-all duration-300 border-border hover:border-primary/50 group cursor-pointer",
+                        className: "p-6 bg-card hover:bg-card-hover transition-all duration-300 border-border hover:border-warning/50 group cursor-pointer",
                         children: [a.jsx(t.icon, {
-                            className: "h-8 w-8 text-primary mb-3 group-hover:text-primary-glow transition-colors"
+                            className: "h-8 w-8 text-warning mb-3 group-hover:text-warning-glow transition-colors"
                         }), a.jsx("h4", {
                             className: "text-lg font-semibold mb-2",
                             children: t.title
@@ -19040,9 +19040,9 @@ const YE = () => {
                     }, n))
                 })]
             }), a.jsxs(H, {
-                className: "p-8 bg-gradient-dark border-primary/20 relative overflow-hidden",
+                className: "p-8 bg-gradient-dark border-warning/20 relative overflow-hidden",
                 children: [a.jsx("div", {
-                    className: "absolute inset-0 bg-gradient-primary opacity-5"
+                    className: "absolute inset-0 bg-gradient-warning opacity-5"
                 }), a.jsxs("div", {
                     className: "relative z-10 text-center space-y-4",
                     children: [a.jsx("h3", {
@@ -19060,7 +19060,7 @@ const YE = () => {
   , JE = Kl("inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2", {
     variants: {
         variant: {
-            default: "border-transparent bg-primary text-primary-foreground hover:bg-primary/80",
+            default: "border-transparent bg-warning text-warning-foreground hover:bg-warning/80",
             secondary: "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",
             destructive: "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
             outline: "text-foreground"
@@ -19124,7 +19124,7 @@ const XE = "/assets/project1-CawQbjMe.jpg"
       , n = r => {
         switch (r) {
         case "Active":
-            return "bg-primary/20 text-primary border-primary/30";
+            return "bg-warning/20 text-warning border-warning/30";
         case "Completed":
             return "bg-accent/20 text-accent border-accent/30";
         case "In Progress":
@@ -19283,7 +19283,7 @@ const s2 = () => {
                     }), a.jsx("div", {
                         className: "space-y-4",
                         children: t.map( (h, p) => a.jsxs("div", {
-                            className: "relative flex items-center gap-4 p-4 rounded-lg bg-background/50 border border-border hover:border-primary/50 transition-all duration-300 group",
+                            className: "relative flex items-center gap-4 p-4 rounded-lg bg-background/50 border border-border hover:border-warning/50 transition-all duration-300 group",
                             children: [a.jsxs("div", {
                                 className: "flex items-center gap-2",
                                 children: [u(p), a.jsxs("span", {
@@ -19298,7 +19298,7 @@ const s2 = () => {
                                         className: "font-semibold text-lg",
                                         children: h.name
                                     }), a.jsxs("span", {
-                                        className: "text-primary font-orbitron font-bold",
+                                        className: "text-warning font-orbitron font-bold",
                                         children: [h.votes, " votes"]
                                     })]
                                 }), a.jsx("div", {
@@ -19476,7 +19476,7 @@ const c2 = () => {
                         a.jsx("h2", {
                             className: "text-4xl md:text-5xl font-orbitron font-bold",
                             children: a.jsx("span", {
-                                className: "bg-gradient-primary bg-clip-text text-transparent",
+                                className: "bg-gradient-warning bg-clip-text text-transparent",
                                 children: "Get In Touch"
                             })
                         }),
@@ -19503,8 +19503,8 @@ const c2 = () => {
                                             className: "flex items-start gap-4 p-3 rounded-lg hover:bg-muted transition-colors group",
                                             children: [
                                                 a.jsx("div", {
-                                                    className: "p-2 rounded-md bg-primary/10 group-hover:bg-primary/20 transition-colors",
-                                                    children: a.jsx(l.icon, { className: "h-5 w-5 text-primary" })
+                                                    className: "p-2 rounded-md bg-warning/10 group-hover:bg-warning/20 transition-colors",
+                                                    children: a.jsx(l.icon, { className: "h-5 w-5 text-warning" })
                                                 }),
                                                 a.jsxs("div", {
                                                     children: [
@@ -19530,7 +19530,7 @@ const c2 = () => {
                             "a",
                             {
                                 href: l.href,
-                                className: "p-3 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 group",
+                                className: "p-3 rounded-md bg-muted hover:bg-warning hover:text-warning-foreground transition-all duration-300 group",
                                 "aria-label": l.label,
                                 children: a.jsx(l.icon, { className: "h-5 w-5" })
                             },
@@ -19568,45 +19568,45 @@ const c2 = () => {
                     children: n ? a.jsxs(a.Fragment, {
                         children: [a.jsx("a", {
                             href: "#home",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
+                            className: "text-muted-foreground hover:text-warning transition-colors",
                             children: "Home"
                         }), a.jsx("a", {
                             href: "#about",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
+                            className: "text-muted-foreground hover:text-warning transition-colors",
                             children: "About"
                         }), a.jsx("a", {
                             href: "#team",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
+                            className: "text-muted-foreground hover:text-warning transition-colors",
                             children: "Team"
                         }), a.jsx("a", {
                             href: "#get-involved",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
+                            className: "text-muted-foreground hover:text-warning transition-colors",
                             children: "Get Involved"
                         }), a.jsx("a", {
                             href: "#contact",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
+                            className: "text-muted-foreground hover:text-warning transition-colors",
                             children: "Contact"
                         })]
                     }) : a.jsxs(a.Fragment, {
                         children: [a.jsx(me, {
                             to: "/",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
+                            className: "text-muted-foreground hover:text-warning transition-colors",
                             children: "Home"
                         }), a.jsx(me, {
                             to: "/about",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
+                            className: "text-muted-foreground hover:text-warning transition-colors",
                             children: "About"
                         }), a.jsx(me, {
                             to: "/team",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
+                            className: "text-muted-foreground hover:text-warning transition-colors",
                             children: "Team"
                         }), a.jsx(me, {
                             to: "/sponsors",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
+                            className: "text-muted-foreground hover:text-warning transition-colors",
                             children: "Sponsors"
                         }), a.jsx(me, {
                             to: "/join",
-                            className: "text-muted-foreground hover:text-primary transition-colors",
+                            className: "text-muted-foreground hover:text-warning transition-colors",
                             children: "Join Us"
                         })]
                     })
@@ -19652,15 +19652,24 @@ const c2 = () => {
                 className: "grid md:grid-cols-2 gap-12 items-center",
                 children: [a.jsxs("div", {
                     children: [a.jsx("h2", {
-                        className: "text-3xl font-orbitron font-bold mb-6 text-primary",
-                        children: "Our Mission"
+                        className: "text-3xl font-orbitron font-bold mb-6 text-warning",
+                        children: "About the Founders"
                     }), a.jsx("p", {
                         className: "text-muted-foreground mb-4",
-                        children: "CU Autonomous Racing is a student-led organization dedicated to pushing the boundaries of autonomous vehicle technology through competitive racing. We bring together passionate students from engineering, computer science, and design to create cutting-edge autonomous racing systems."
+                        children: "CU Autonomous Racing was created as an opportunity for students to get the most out of their college experience and prepare them for tackling real world challenges. We wanted to create an environment where students could gain leadership experience and practice hands-on engineering working as a team."
                     }), a.jsx("p", {
+                        className: "text-muted-foreground mb-4",
+                        children: "From the beginning, we knew we wanted to create a racing team and compete in annual, international competition. But we saw something bigger: autonomous driving is rapidly changing the transportation industry. CU Boulder’s students have the talent to lead that space yet there wasn’t a club focussed primarily on autonomous vehicle development. CU Autonomous Racing was created to fill that gap."
+                    }),
+                    a.jsx("p", {
+                        className: "text-muted-foreground mb-4",
+                        children: "July 2025 marked the beginning of CU Autonomous Racing. To kickstart our launch, we quickly built a small demonstration vehicle with a basic automatic braking system and lane keeping system. This gave us a simple proof-of-concept for our recruitment video."
+                    }),
+                    a.jsx("p", {
                         className: "text-muted-foreground",
-                        children: "Our team combines theoretical knowledge with hands-on experience, preparing the next generation of engineers and innovators for careers in autonomous systems, robotics, and artificial intelligence."
-                    })]
+                        children: "In Fall 2025, we grew into a dedicated and enthusiastic team. We built and tested our first full prototype. This Spring 2026, we’re building on that momentum as we take major steps toward our full-size autonomous race kart. With steady progress and a driven team behind it, we’re on track to compete this June."
+                    })
+                ]
                 }), a.jsx("div", {
                     className: "relative",
                     children: a.jsx("div", {
@@ -19683,9 +19692,9 @@ const c2 = () => {
             }), a.jsxs("div", {
                 className: "grid md:grid-cols-2 lg:grid-cols-4 gap-6",
                 children: [a.jsxs(H, {
-                    className: "p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300",
+                    className: "p-6 bg-card/50 backdrop-blur-sm border-warning/20 hover:border-warning/40 transition-all duration-300",
                     children: [a.jsx(Gh, {
-                        className: "h-12 w-12 text-primary mb-4"
+                        className: "h-12 w-12 text-warning mb-4"
                     }), a.jsx("h3", {
                         className: "text-lg font-bold mb-2",
                         children: "Innovation"
@@ -19694,9 +19703,9 @@ const c2 = () => {
                         children: "Pushing boundaries in autonomous vehicle technology"
                     })]
                 }), a.jsxs(H, {
-                    className: "p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300",
+                    className: "p-6 bg-card/50 backdrop-blur-sm border-warning/20 hover:border-warning/40 transition-all duration-300",
                     children: [a.jsx(mo, {
-                        className: "h-12 w-12 text-primary mb-4"
+                        className: "h-12 w-12 text-warning mb-4"
                     }), a.jsx("h3", {
                         className: "text-lg font-bold mb-2",
                         children: "Excellence"
@@ -19705,9 +19714,9 @@ const c2 = () => {
                         children: "Striving for the highest standards in everything we do"
                     })]
                 }), a.jsxs(H, {
-                    className: "p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300",
+                    className: "p-6 bg-card/50 backdrop-blur-sm border-warning/20 hover:border-warning/40 transition-all duration-300",
                     children: [a.jsx(Sr, {
-                        className: "h-12 w-12 text-primary mb-4"
+                        className: "h-12 w-12 text-warning mb-4"
                     }), a.jsx("h3", {
                         className: "text-lg font-bold mb-2",
                         children: "Collaboration"
@@ -19716,9 +19725,9 @@ const c2 = () => {
                         children: "Working together across disciplines to achieve our goals"
                     })]
                 }), a.jsxs(H, {
-                    className: "p-6 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300",
+                    className: "p-6 bg-card/50 backdrop-blur-sm border-warning/20 hover:border-warning/40 transition-all duration-300",
                     children: [a.jsx(as, {
-                        className: "h-12 w-12 text-primary mb-4"
+                        className: "h-12 w-12 text-warning mb-4"
                     }), a.jsx("h3", {
                         className: "text-lg font-bold mb-2",
                         children: "Competition"
@@ -19870,9 +19879,9 @@ const c2 = () => {
                 }), a.jsx("div", {
                     className: "grid md:grid-cols-2 lg:grid-cols-4 gap-6",
                     children: t.map( (n, r) => a.jsxs(H, {
-                        className: "p-6 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all hover:scale-105",
+                        className: "p-6 bg-gradient-card border-warning/20 hover:border-warning/40 transition-all hover:scale-105",
                         children: [a.jsx(n.icon, {
-                            className: "h-12 w-12 text-primary mb-4"
+                            className: "h-12 w-12 text-warning mb-4"
                         }), a.jsx("h3", {
                             className: "text-xl font-bold mb-2",
                             children: n.title
@@ -19895,20 +19904,20 @@ const c2 = () => {
                     children: e.map( (n, r) => a.jsxs(H, {
                         className: `p-6 ${n.color} relative overflow-hidden ${n.featured ? "scale-105 shadow-glow" : ""}`,
                         children: [n.featured && a.jsx(we, {
-                            className: "absolute top-4 right-4 bg-primary",
+                            className: "absolute top-4 right-4 bg-warning",
                             children: "Most Popular"
                         }), a.jsx("h3", {
                             className: "text-2xl font-orbitron font-bold mb-2",
                             children: n.name
                         }), a.jsx("p", {
-                            className: "text-3xl font-bold text-primary mb-6",
+                            className: "text-3xl font-bold text-warning mb-6",
                             children: n.price
                         }), a.jsx("ul", {
                             className: "space-y-3",
                             children: n.benefits.map( (s, o) => a.jsxs("li", {
                                 className: "flex items-start gap-2",
                                 children: [a.jsx(t0, {
-                                    className: "h-5 w-5 text-primary shrink-0 mt-0.5"
+                                    className: "h-5 w-5 text-warning shrink-0 mt-0.5"
                                 }), a.jsx("span", {
                                     className: "text-sm",
                                     children: s
@@ -19936,13 +19945,13 @@ const c2 = () => {
                 }), a.jsx("div", {
                     className: "grid grid-cols-2 md:grid-cols-4 gap-8",
                     children: [1, 2, 3, 4, 5, 6, 7, 8].map(n => a.jsx(H, {
-                        className: "p-8 bg-gradient-card border-primary/20 flex items-center justify-center hover:border-primary/40 transition-all group",
+                        className: "p-8 bg-gradient-card border-warning/20 flex items-center justify-center hover:border-warning/40 transition-all group",
                         children: a.jsxs("div", {
                             className: "text-center",
                             children: [a.jsx("div", {
-                                className: "w-32 h-32 bg-muted/20 rounded-lg mb-4 flex items-center justify-center group-hover:bg-primary/10 transition-colors",
+                                className: "w-32 h-32 bg-muted/20 rounded-lg mb-4 flex items-center justify-center group-hover:bg-warning/10 transition-colors",
                                 children: a.jsx(fk, {
-                                    className: "h-12 w-12 text-muted-foreground group-hover:text-primary transition-colors"
+                                    className: "h-12 w-12 text-muted-foreground group-hover:text-warning transition-colors"
                                 })
                             }), a.jsxs("p", {
                                 className: "text-sm text-muted-foreground",
@@ -20126,9 +20135,9 @@ const c2 = () => {
                         label: "Subteams",
                         value: "4"
                     }].map( (n, r) => a.jsxs(H, {
-                        className: "p-6 text-center bg-gradient-card border-primary/20",
+                        className: "p-6 text-center bg-gradient-card border-warning/20",
                         children: [a.jsx("p", {
-                            className: "text-3xl font-bold text-primary",
+                            className: "text-3xl font-bold text-warning",
                             children: n.value
                         }), a.jsx("p", {
                             className: "text-muted-foreground",
@@ -20153,11 +20162,11 @@ const c2 = () => {
                 }), a.jsx("div", {
                     className: "grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-6 justify-items-center",
                     children: n.members.map( (s, o) => a.jsx(H, {
-                        className: "p-6 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all hover:scale-105 group",
+                        className: "p-6 bg-gradient-card border-warning/20 hover:border-warning/40 transition-all hover:scale-105 group",
                         children: a.jsxs("div", {
                             className: "flex flex-col items-center text-center",
                             children: [a.jsx("div", {
-                                className: "w-24 h-24 rounded-full overflow-hidden mb-4 ring-2 ring-primary/20 group-hover:ring-primary/40 transition-all",
+                                className: "w-24 h-24 rounded-full overflow-hidden mb-4 ring-2 ring-warning/20 group-hover:ring-warning/40 transition-all",
                                 children: a.jsx("img", {
                                     src: s.image,
                                     alt: s.name,
@@ -20167,7 +20176,7 @@ const c2 = () => {
                                 className: "text-xl font-bold mb-1",
                                 children: s.name
                             }), a.jsx("p", {
-                                className: "text-sm text-primary mb-3",
+                                className: "text-sm text-warning mb-3",
                                 children: s.role
                             }), a.jsx("div", {
                                 className: "flex flex-wrap gap-2 mb-4 justify-center",
@@ -20180,19 +20189,19 @@ const c2 = () => {
                                 className: "flex gap-3",
                                 children: [a.jsx("a", {
                                     href: s.linkedin,
-                                    className: "text-muted-foreground hover:text-primary transition-colors",
+                                    className: "text-muted-foreground hover:text-warning transition-colors",
                                     children: a.jsx(Kh, {
                                         className: "h-5 w-5"
                                     })
                                 }), a.jsx("a", {
                                     href: s.github,
-                                    className: "text-muted-foreground hover:text-primary transition-colors",
+                                    className: "text-muted-foreground hover:text-warning transition-colors",
                                     children: a.jsx(Gl, {
                                         className: "h-5 w-5"
                                     })
                                 }), a.jsx("a", {
                                     href: `mailto:${s.email}`,
-                                    className: "text-muted-foreground hover:text-primary transition-colors",
+                                    className: "text-muted-foreground hover:text-warning transition-colors",
                                     children: a.jsx(Ql, {
                                         className: "h-5 w-5"
                                     })
@@ -20207,9 +20216,9 @@ const c2 = () => {
             children: a.jsx("div", {
                 className: "container mx-auto",
                 children: a.jsxs(H, {
-                    className: "p-12 bg-gradient-card border-primary/20 text-center",
+                    className: "p-12 bg-gradient-card border-warning/20 text-center",
                     children: [a.jsx(Sr, {
-                        className: "h-16 w-16 text-primary mx-auto mb-6"
+                        className: "h-16 w-16 text-warning mx-auto mb-6"
                     }), a.jsx("h2", {
                         className: "text-3xl font-orbitron font-bold mb-4",
                         children: "Join Our Team"
@@ -20712,11 +20721,11 @@ const P2 = () => {
                         label: "Innovations",
                         value: "20+"
                     }].map( (s, o) => a.jsxs(H, {
-                        className: "p-6 text-center bg-gradient-card border-primary/20 hover:border-primary/40 transition-all group",
+                        className: "p-6 text-center bg-gradient-card border-warning/20 hover:border-warning/40 transition-all group",
                         children: [a.jsx(s.icon, {
-                            className: "h-8 w-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform"
+                            className: "h-8 w-8 text-warning mx-auto mb-3 group-hover:scale-110 transition-transform"
                         }), a.jsx("p", {
-                            className: "text-3xl font-bold text-primary",
+                            className: "text-3xl font-bold text-warning",
                             children: s.value
                         }), a.jsx("p", {
                             className: "text-muted-foreground",
@@ -20750,11 +20759,11 @@ const P2 = () => {
                         children: a.jsx("div", {
                             className: "grid lg:grid-cols-2 gap-8",
                             children: e.map( (s, o) => a.jsxs(H, {
-                                className: "overflow-hidden bg-gradient-card border-primary/20 hover:border-primary/40 transition-all",
+                                className: "overflow-hidden bg-gradient-card border-warning/20 hover:border-warning/40 transition-all",
                                 children: [a.jsxs("div", {
                                     className: "aspect-video bg-muted/20 relative overflow-hidden",
                                     children: [a.jsx("div", {
-                                        className: "absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center",
+                                        className: "absolute inset-0 bg-gradient-to-br from-warning/20 to-secondary/20 flex items-center justify-center",
                                         children: a.jsx(fl, {
                                             className: "h-24 w-24 text-muted-foreground/20"
                                         })
@@ -20787,13 +20796,13 @@ const P2 = () => {
                                                 className: "text-muted-foreground",
                                                 children: "Progress"
                                             }), a.jsxs("span", {
-                                                className: "text-primary",
+                                                className: "text-warning",
                                                 children: [s.progress, "%"]
                                             })]
                                         }), a.jsx("div", {
                                             className: "h-2 bg-muted rounded-full overflow-hidden",
                                             children: a.jsx("div", {
-                                                className: "h-full bg-gradient-to-r from-primary to-secondary transition-all",
+                                                className: "h-full bg-gradient-to-r from-warning to-secondary transition-all",
                                                 style: {
                                                     width: `${s.progress}%`
                                                 }
@@ -20837,9 +20846,9 @@ const P2 = () => {
                         children: a.jsx("div", {
                             className: "grid md:grid-cols-3 gap-6",
                             children: t.map( (s, o) => a.jsxs(H, {
-                                className: "p-6 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all hover:scale-105 group",
+                                className: "p-6 bg-gradient-card border-warning/20 hover:border-warning/40 transition-all hover:scale-105 group",
                                 children: [a.jsx(s.icon, {
-                                    className: "h-12 w-12 text-primary mb-4 group-hover:scale-110 transition-transform"
+                                    className: "h-12 w-12 text-warning mb-4 group-hover:scale-110 transition-transform"
                                 }), a.jsx("h3", {
                                     className: "text-xl font-bold mb-2",
                                     children: s.title
@@ -20865,7 +20874,7 @@ const P2 = () => {
                         children: a.jsx("div", {
                             className: "grid gap-6",
                             children: n.map( (s, o) => a.jsxs(H, {
-                                className: "p-6 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all",
+                                className: "p-6 bg-gradient-card border-warning/20 hover:border-warning/40 transition-all",
                                 children: [a.jsxs("div", {
                                     className: "flex items-start justify-between mb-4",
                                     children: [a.jsxs("div", {
@@ -21098,9 +21107,9 @@ const P2 = () => {
                         label: "Total Attendees",
                         value: "800+"
                     }].map( (s, o) => a.jsxs(H, {
-                        className: "p-6 text-center bg-gradient-card border-primary/20",
+                        className: "p-6 text-center bg-gradient-card border-warning/20",
                         children: [a.jsx("p", {
-                            className: "text-3xl font-bold text-primary",
+                            className: "text-3xl font-bold text-warning",
                             children: s.value
                         }), a.jsx("p", {
                             className: "text-muted-foreground",
@@ -21132,7 +21141,7 @@ const P2 = () => {
                         value: "upcoming",
                         className: "space-y-6",
                         children: e.map( (s, o) => a.jsx(H, {
-                            className: "p-6 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all",
+                            className: "p-6 bg-gradient-card border-warning/20 hover:border-warning/40 transition-all",
                             children: a.jsxs("div", {
                                 className: "flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6",
                                 children: [a.jsxs("div", {
@@ -21154,21 +21163,21 @@ const P2 = () => {
                                         children: [a.jsxs("div", {
                                             className: "flex items-center gap-2 text-sm",
                                             children: [a.jsx(Bo, {
-                                                className: "h-4 w-4 text-primary"
+                                                className: "h-4 w-4 text-warning"
                                             }), a.jsx("span", {
                                                 children: s.date
                                             })]
                                         }), a.jsxs("div", {
                                             className: "flex items-center gap-2 text-sm",
                                             children: [a.jsx(Kp, {
-                                                className: "h-4 w-4 text-primary"
+                                                className: "h-4 w-4 text-warning"
                                             }), a.jsx("span", {
                                                 children: s.time
                                             })]
                                         }), a.jsxs("div", {
                                             className: "flex items-center gap-2 text-sm",
                                             children: [a.jsx(Fa, {
-                                                className: "h-4 w-4 text-primary"
+                                                className: "h-4 w-4 text-warning"
                                             }), a.jsx("span", {
                                                 children: s.location
                                             })]
@@ -21181,13 +21190,13 @@ const P2 = () => {
                                                 className: "text-muted-foreground",
                                                 children: "Registration"
                                             }), a.jsxs("span", {
-                                                className: "text-primary",
+                                                className: "text-warning",
                                                 children: [s.attendees, "/", s.maxAttendees, " spots filled"]
                                             })]
                                         }), a.jsx("div", {
                                             className: "h-2 bg-muted rounded-full overflow-hidden",
                                             children: a.jsx("div", {
-                                                className: "h-full bg-gradient-to-r from-primary to-secondary transition-all",
+                                                className: "h-full bg-gradient-to-r from-warning to-secondary transition-all",
                                                 style: {
                                                     width: `${s.attendees / s.maxAttendees * 100}%`
                                                 }
@@ -21220,7 +21229,7 @@ const P2 = () => {
                         value: "past",
                         className: "space-y-6",
                         children: t.map( (s, o) => a.jsxs(H, {
-                            className: "p-6 bg-gradient-card border-primary/20",
+                            className: "p-6 bg-gradient-card border-warning/20",
                             children: [a.jsxs("div", {
                                 className: "flex items-start justify-between mb-4",
                                 children: [a.jsxs("div", {
@@ -21281,13 +21290,13 @@ const P2 = () => {
                         value: "series",
                         className: "space-y-6",
                         children: n.map( (s, o) => a.jsx(H, {
-                            className: "p-6 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all group",
+                            className: "p-6 bg-gradient-card border-warning/20 hover:border-warning/40 transition-all group",
                             children: a.jsxs("div", {
                                 className: "flex items-start gap-4",
                                 children: [a.jsx("div", {
-                                    className: "p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors",
+                                    className: "p-3 rounded-lg bg-warning/10 group-hover:bg-warning/20 transition-colors",
                                     children: a.jsx(s.icon, {
-                                        className: "h-8 w-8 text-primary"
+                                        className: "h-8 w-8 text-warning"
                                     })
                                 }), a.jsxs("div", {
                                     className: "flex-1",
@@ -21302,21 +21311,21 @@ const P2 = () => {
                                         children: [a.jsxs("div", {
                                             className: "flex items-center gap-2",
                                             children: [a.jsx(Bo, {
-                                                className: "h-4 w-4 text-primary"
+                                                className: "h-4 w-4 text-warning"
                                             }), a.jsx("span", {
                                                 children: s.schedule
                                             })]
                                         }), a.jsxs("div", {
                                             className: "flex items-center gap-2",
                                             children: [a.jsx(Kp, {
-                                                className: "h-4 w-4 text-primary"
+                                                className: "h-4 w-4 text-warning"
                                             }), a.jsx("span", {
                                                 children: s.time
                                             })]
                                         }), a.jsxs("div", {
                                             className: "flex items-center gap-2",
                                             children: [a.jsx(Fa, {
-                                                className: "h-4 w-4 text-primary"
+                                                className: "h-4 w-4 text-warning"
                                             }), a.jsx("span", {
                                                 children: s.location
                                             })]
@@ -23567,7 +23576,7 @@ function zw(e) {
 }
 const Bw = g.forwardRef( ({className: e, ...t}, n) => a.jsx(gf, {
     ref: n,
-    className: ce("peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50", e),
+    className: ce("peer h-4 w-4 shrink-0 rounded-sm border border-warning ring-offset-background data-[state=checked]:bg-warning data-[state=checked]:text-warning-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50", e),
     ...t,
     children: a.jsx(Dw, {
         className: ce("flex items-center justify-center text-current"),
@@ -30027,11 +30036,11 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                 }), a.jsx("div", {
                     className: "grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto",
                     children: s.map( (l, c) => a.jsx(H, {
-                        className: "p-4 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all",
+                        className: "p-4 bg-gradient-card border-warning/20 hover:border-warning/40 transition-all",
                         children: a.jsxs("div", {
                             className: "flex items-start gap-3",
                             children: [a.jsx(t0, {
-                                className: "h-5 w-5 text-primary shrink-0 mt-0.5"
+                                className: "h-5 w-5 text-warning shrink-0 mt-0.5"
                             }), a.jsx("span", {
                                 className: "text-sm",
                                 children: l
@@ -30050,9 +30059,9 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                 }), a.jsx("div", {
                     className: "grid lg:grid-cols-3 gap-6",
                     children: r.map( (l, c) => a.jsxs(H, {
-                        className: "p-6 bg-gradient-card border-primary/20 hover:border-primary/40 transition-all hover:scale-105",
+                        className: "p-6 bg-gradient-card border-warning/20 hover:border-warning/40 transition-all hover:scale-105",
                         children: [a.jsx(l.icon, {
-                            className: "h-12 w-12 text-primary mb-4"
+                            className: "h-12 w-12 text-warning mb-4"
                         }), a.jsx("h3", {
                             className: "text-xl font-bold mb-3",
                             children: l.name
@@ -30081,7 +30090,7 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                                 children: l.openRoles.map( (u, d) => a.jsxs("li", {
                                     className: "text-sm text-muted-foreground flex items-center gap-2",
                                     children: [a.jsx(Hh, {
-                                        className: "h-3 w-3 text-primary"
+                                        className: "h-3 w-3 text-warning"
                                     }), u]
                                 }, d))
                             })]
@@ -30111,7 +30120,7 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                         q: "When are applications reviewed?",
                         a: "We review applications on a rolling basis and respond within 48 hours."
                     }].map( (l, c) => a.jsxs(H, {
-                        className: "p-6 bg-gradient-card border-primary/20",
+                        className: "p-6 bg-gradient-card border-warning/20",
                         children: [a.jsx("h3", {
                             className: "font-bold mb-2",
                             children: l.q
@@ -30185,19 +30194,19 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                     children: [a.jsxs("h2", {
                         className: "text-3xl md:text-4xl font-orbitron font-bold text-center mb-12",
                         children: ["Ways to ", a.jsx("span", {
-                            className: "text-primary",
+                            className: "text-warning",
                             children: "Collaborate"
                         })]
                     }), a.jsx("div", {
                         className: "grid md:grid-cols-2 gap-8",
                         children: e.map( (t, n) => a.jsx(H, {
-                            className: "p-8 bg-card hover:bg-card-hover transition-all duration-300 border-border hover:border-primary/50",
+                            className: "p-8 bg-card hover:bg-card-hover transition-all duration-300 border-border hover:border-warning/50",
                             children: a.jsxs("div", {
                                 className: "flex items-start gap-4",
                                 children: [a.jsx("div", {
-                                    className: "p-3 rounded-lg bg-primary/10",
+                                    className: "p-3 rounded-lg bg-warning/10",
                                     children: a.jsx(t.icon, {
-                                        className: "h-8 w-8 text-primary"
+                                        className: "h-8 w-8 text-warning"
                                     })
                                 }), a.jsxs("div", {
                                     className: "space-y-2",
@@ -30218,11 +30227,11 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                 children: a.jsx("div", {
                     className: "container mx-auto px-4",
                     children: a.jsxs(H, {
-                        className: "p-12 bg-card border-primary/20 max-w-3xl mx-auto text-center",
+                        className: "p-12 bg-card border-warning/20 max-w-3xl mx-auto text-center",
                         children: [a.jsxs("h3", {
                             className: "text-2xl font-orbitron font-bold mb-4",
                             children: ["Ready to ", a.jsx("span", {
-                                className: "text-primary",
+                                className: "text-warning",
                                 children: "Collaborate?"
                             })]
                         }), a.jsx("p", {
@@ -30316,21 +30325,21 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                     children: [a.jsxs("h2", {
                         className: "text-3xl md:text-4xl font-orbitron font-bold text-center mb-12",
                         children: ["Mentorship ", a.jsx("span", {
-                            className: "text-primary",
+                            className: "text-warning",
                             children: "Opportunities"
                         })]
                     }), a.jsx("div", {
                         className: "grid md:grid-cols-2 gap-8",
                         children: e.map( (n, r) => a.jsx(H, {
-                            className: "p-8 bg-card hover:bg-card-hover transition-all duration-300 border-border hover:border-primary/50",
+                            className: "p-8 bg-card hover:bg-card-hover transition-all duration-300 border-border hover:border-warning/50",
                             children: a.jsxs("div", {
                                 className: "space-y-4",
                                 children: [a.jsxs("div", {
                                     className: "flex items-center gap-4",
                                     children: [a.jsx("div", {
-                                        className: "p-3 rounded-lg bg-primary/10",
+                                        className: "p-3 rounded-lg bg-warning/10",
                                         children: a.jsx(n.icon, {
-                                            className: "h-8 w-8 text-primary"
+                                            className: "h-8 w-8 text-warning"
                                         })
                                     }), a.jsx("h3", {
                                         className: "text-xl font-semibold",
@@ -30358,7 +30367,7 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                     children: [a.jsxs("h2", {
                         className: "text-3xl md:text-4xl font-orbitron font-bold text-center mb-12",
                         children: ["Flexible ", a.jsx("span", {
-                            className: "text-primary",
+                            className: "text-warning",
                             children: "Time Commitment"
                         })]
                     }), a.jsx("div", {
@@ -30366,12 +30375,12 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                         children: t.map( (n, r) => a.jsxs(H, {
                             className: "p-6 bg-card border-border text-center",
                             children: [a.jsx(Bo, {
-                                className: "h-8 w-8 text-primary mx-auto mb-4"
+                                className: "h-8 w-8 text-warning mx-auto mb-4"
                             }), a.jsx("h3", {
                                 className: "text-lg font-semibold mb-2",
                                 children: n.type
                             }), a.jsx("p", {
-                                className: "text-primary font-mono mb-2",
+                                className: "text-warning font-mono mb-2",
                                 children: n.hours
                             }), a.jsx("p", {
                                 className: "text-sm text-muted-foreground",
@@ -30385,11 +30394,11 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                 children: a.jsx("div", {
                     className: "container mx-auto px-4",
                     children: a.jsxs(H, {
-                        className: "p-12 bg-card border-primary/20 max-w-4xl mx-auto",
+                        className: "p-12 bg-card border-warning/20 max-w-4xl mx-auto",
                         children: [a.jsxs("h3", {
                             className: "text-2xl font-orbitron font-bold mb-6 text-center",
                             children: ["Why Mentor ", a.jsx("span", {
-                                className: "text-primary",
+                                className: "text-warning",
                                 children: "Our Team?"
                             })]
                         }), a.jsxs("div", {
@@ -30399,7 +30408,7 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                                 children: [a.jsxs("div", {
                                     className: "flex items-start gap-3",
                                     children: [a.jsx("div", {
-                                        className: "w-2 h-2 rounded-full bg-primary mt-2"
+                                        className: "w-2 h-2 rounded-full bg-warning mt-2"
                                     }), a.jsx("p", {
                                         className: "text-muted-foreground",
                                         children: "Shape the future of autonomous vehicle technology"
@@ -30407,7 +30416,7 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                                 }), a.jsxs("div", {
                                     className: "flex items-start gap-3",
                                     children: [a.jsx("div", {
-                                        className: "w-2 h-2 rounded-full bg-primary mt-2"
+                                        className: "w-2 h-2 rounded-full bg-warning mt-2"
                                     }), a.jsx("p", {
                                         className: "text-muted-foreground",
                                         children: "Work with passionate and talented engineering students"
@@ -30415,7 +30424,7 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                                 }), a.jsxs("div", {
                                     className: "flex items-start gap-3",
                                     children: [a.jsx("div", {
-                                        className: "w-2 h-2 rounded-full bg-primary mt-2"
+                                        className: "w-2 h-2 rounded-full bg-warning mt-2"
                                     }), a.jsx("p", {
                                         className: "text-muted-foreground",
                                         children: "Stay connected with cutting-edge research and innovation"
@@ -30426,7 +30435,7 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                                 children: [a.jsxs("div", {
                                     className: "flex items-start gap-3",
                                     children: [a.jsx("div", {
-                                        className: "w-2 h-2 rounded-full bg-primary mt-2"
+                                        className: "w-2 h-2 rounded-full bg-warning mt-2"
                                     }), a.jsx("p", {
                                         className: "text-muted-foreground",
                                         children: "Build your professional network and give back"
@@ -30434,7 +30443,7 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                                 }), a.jsxs("div", {
                                     className: "flex items-start gap-3",
                                     children: [a.jsx("div", {
-                                        className: "w-2 h-2 rounded-full bg-primary mt-2"
+                                        className: "w-2 h-2 rounded-full bg-warning mt-2"
                                     }), a.jsx("p", {
                                         className: "text-muted-foreground",
                                         children: "Recognition as a team mentor and advisor"
@@ -30442,7 +30451,7 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                                 }), a.jsxs("div", {
                                     className: "flex items-start gap-3",
                                     children: [a.jsx("div", {
-                                        className: "w-2 h-2 rounded-full bg-primary mt-2"
+                                        className: "w-2 h-2 rounded-full bg-warning mt-2"
                                     }), a.jsx("p", {
                                         className: "text-muted-foreground",
                                         children: "Invitations to team events and competitions"
@@ -30539,7 +30548,7 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
             children: a.jsx("div", {
                 className: "container mx-auto max-w-2xl",
                 children: a.jsxs(H, {
-                    className: "p-8 bg-gradient-card border-primary/20",
+                    className: "p-8 bg-gradient-card border-warning/20",
                     children: [a.jsx("h2", {
                         className: "text-2xl font-orbitron font-bold mb-6",
                         children: "Sponsorship Inquiry Form"
@@ -30743,7 +30752,7 @@ const yb = g.forwardRef( ({className: e, value: t, ...n}, r) => a.jsx(vb, {
     className: ce("relative h-4 w-full overflow-hidden rounded-full bg-secondary", e),
     ...n,
     children: a.jsx(OA, {
-        className: "h-full w-full flex-1 bg-primary transition-all",
+        className: "h-full w-full flex-1 bg-warning transition-all",
         style: {
             transform: `translateX(-${100 - (t || 0)}%)`
         }
@@ -30776,7 +30785,7 @@ const IA = "/assets/track1-BT8KkInV.jpg"
         m.style.left = `${v}%`,
         m.style.top = `${w}%`,
         m.style.transform = "translate(-50%, -50%)",
-        m.innerHTML = '<div class="w-8 h-8 rounded-full bg-primary/50"></div>',
+        m.innerHTML = '<div class="w-8 h-8 rounded-full bg-warning/50"></div>',
         f.currentTarget.appendChild(m),
         setTimeout( () => m.remove(), 600)
     }
@@ -30804,7 +30813,7 @@ const IA = "/assets/track1-BT8KkInV.jpg"
         children: [a.jsx(en, {}), a.jsxs("section", {
             className: "pt-24 pb-12 relative overflow-hidden",
             children: [a.jsx("div", {
-                className: "absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"
+                className: "absolute inset-0 bg-gradient-to-br from-warning/5 via-transparent to-accent/5"
             }), a.jsx("div", {
                 className: "container mx-auto px-4 relative",
                 children: a.jsxs("div", {
@@ -30818,7 +30827,7 @@ const IA = "/assets/track1-BT8KkInV.jpg"
                     }), a.jsx("h1", {
                         className: "text-4xl md:text-5xl font-orbitron font-bold",
                         children: a.jsx("span", {
-                            className: "bg-gradient-primary bg-clip-text text-transparent",
+                            className: "bg-gradient-warning bg-clip-text text-transparent",
                             children: "Train the AI"
                         })
                     }), a.jsx("p", {
@@ -30855,7 +30864,7 @@ const IA = "/assets/track1-BT8KkInV.jpg"
                             children: a.jsxs("div", {
                                 className: "flex items-center space-x-3",
                                 children: [a.jsx(Gh, {
-                                    className: "h-8 w-8 text-primary"
+                                    className: "h-8 w-8 text-warning"
                                 }), a.jsxs("div", {
                                     children: [a.jsx("p", {
                                         className: "text-sm text-muted-foreground",
@@ -30918,9 +30927,9 @@ const IA = "/assets/track1-BT8KkInV.jpg"
                                 children: a.jsxs("div", {
                                     className: "relative",
                                     children: [a.jsx("div", {
-                                        className: "w-4 h-4 rounded-full bg-primary border-2 border-white shadow-lg animate-scale-in"
+                                        className: "w-4 h-4 rounded-full bg-warning border-2 border-white shadow-lg animate-scale-in"
                                     }), a.jsx("div", {
-                                        className: "absolute inset-0 w-4 h-4 rounded-full bg-primary/30 animate-ping"
+                                        className: "absolute inset-0 w-4 h-4 rounded-full bg-warning/30 animate-ping"
                                     })]
                                 })
                             }, f.id)), r.length === 0 && a.jsx("div", {
@@ -30954,7 +30963,7 @@ const IA = "/assets/track1-BT8KkInV.jpg"
                             })
                         })]
                     }), a.jsxs(H, {
-                        className: "p-6 bg-gradient-to-r from-primary/5 to-accent/5",
+                        className: "p-6 bg-gradient-to-r from-warning/5 to-accent/5",
                         children: [a.jsx("h3", {
                             className: "font-semibold mb-2",
                             children: "How This Helps"
