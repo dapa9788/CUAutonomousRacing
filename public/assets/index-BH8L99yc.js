@@ -19329,7 +19329,7 @@ const s2 = () => {
                             target: "_blank", // optional: opens in a new tab
                             rel: "noopener noreferrer", // security best practice
                             children: a.jsx(B, {
-                                variant: "secondary",
+                                variant: "glow",
                                 children: "Vote here"
                             })
                             })
