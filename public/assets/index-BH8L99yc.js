@@ -20016,13 +20016,13 @@ const c2 = () => {
                         value: "30+"
                     }, {
                         label: "Departments",
-                        value: "3"
+                        value: "4"
                     }, {
                         label: "Team Leads",
                         value: "4"
                     }, {
                         label: "Subteams",
-                        value: "4"
+                        value: "5"
                     }].map( (n, r) => a.jsxs(H, {
                         className: "p-6 text-center bg-gradient-card border-warning/20",
                         children: [a.jsx("p", {
