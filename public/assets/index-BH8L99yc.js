@@ -20054,7 +20054,7 @@ const c2 = () => {
         members: [
             {
                 name: "Caleb",
-                role: "Electrical Engineer",
+                role: "Electrical Team Lead",
                 image: "assets/Cease_Caleb_2024.png",
                 skills: [],
                 linkedin: "#",
@@ -20067,14 +20067,6 @@ const c2 = () => {
         name: "Operations & Business",
         description: "Managing partnerships, events, and team growth",
         members: [{
-            name: "Hampton",
-            role: "President",
-            image: "assets/hampton.jpg",
-            skills: ["Leadership", "Strategy", "Communication"],
-            linkedin: "#",
-            github: "#",
-            email: "james@curacing.com"
-        }, {
             name: "Frida",
             role: "Business Team Lead",
             image: "assets/alexa.jpg",
