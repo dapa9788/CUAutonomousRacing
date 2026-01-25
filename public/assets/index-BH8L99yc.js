@@ -19999,15 +19999,6 @@ const c2 = () => {
         description: "Leading the organization and setting strategic direction",
         members: [
             {
-                name: "Gabriel",
-                role: "Chief Engineer",
-                image: "assets/gabe.jpg",
-                skills: [],
-                linkedin: "#",
-                github: "#",
-                email: "emily@curacing.com"
-            },
-            {
                 name: "Hampton",
                 role: "President",
                 image: "assets/hampton.jpg",
@@ -20015,6 +20006,15 @@ const c2 = () => {
                 linkedin: "#",
                 github: "#",
                 email: "james@curacing.com"
+            },
+            {
+                name: "Gabriel",
+                role: "Chief Engineer",
+                image: "assets/gabe.jpg",
+                skills: [],
+                linkedin: "#",
+                github: "#",
+                email: "emily@curacing.com"
             }
         ]
     },
