@@ -18819,9 +18819,6 @@ const en = () => {
             children: a.jsx("div", {
                 className: "absolute inset-0 bg-background/70"
             })
-        }), a.jsx("canvas", {
-            ref: e,
-            className: "absolute inset-0 z-10 pointer-events-none"
         }), a.jsx("div", {
             className: "relative z-20 container mx-auto px-4 text-center",
             children: a.jsxs("div", {
