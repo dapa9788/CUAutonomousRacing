@@ -18913,7 +18913,7 @@ const en = () => {
                         className: "space-y-2",
                         children: [a.jsx("div", {
                             className: "text-3xl font-bold text-accent font-orbitron",
-                            children: "___"
+                            children: "10,000+"
                         }), a.jsx("div", {
                             className: "text-sm text-muted-foreground",
                             children: "Lines of Code"
