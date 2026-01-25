@@ -18694,10 +18694,11 @@ const en = () => {
                 children: [a.jsx(me, {
                     to: "/",
                     className: "flex items-center gap-2",
-                    children: a.jsx("span", {
-                        className: "text-xl font-orbitron font-bold bg-gradient-racing bg-clip-text text-transparent",
-                        children: "CU AUTONOMOUS RACING"
-                    })
+                    children: a.jsx("img", {
+                        src: "/assets/cuautonomous.png",
+                        alt: "CU Autonomous Racing",
+                        className: "h-11 w-auto object-contain"
+                        })
                 }), a.jsxs("div", {
                     className: "hidden md:flex items-center gap-8",
                     children: [s.map(o => a.jsxs(me, {
