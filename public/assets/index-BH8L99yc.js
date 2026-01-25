@@ -19674,10 +19674,11 @@ const c2 = () => {
                 }), a.jsx("div", {
                     className: "relative",
                     children: a.jsx("div", {
-                        className: "aspect-video bg-card rounded-lg flex items-center justify-center border border-border",
-                        children: a.jsx("p", {
-                            className: "text-muted-foreground",
-                            children: "Team Photo Coming Soon"
+                        className: "aspect-[3/4] bg-card rounded-lg",
+                        children: a.jsx("img", {
+                            src: "/assets/execphoto.jpg", // your image path
+                            alt: "CU Autonomous Racing Team",
+                            className: "w-full h-full object-cover"
                         })
                     })
                 })]
