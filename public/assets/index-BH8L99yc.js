@@ -19016,7 +19016,7 @@ const YE = () => {
                         className: "flex gap-8 pt-4",
                         children: [a.jsxs("div", {
                             children: [a.jsx("div", {
-                                className: "text-3xl font-bold text-warning font-orbitron",
+                                className: "text-3xl font-bold text-primary font-orbitron",
                                 children: "2025"
                             }), a.jsx("div", {
                                 className: "text-sm text-muted-foreground",
