@@ -20070,7 +20070,7 @@ const c2 = () => {
             name: "Frida",
             role: "Business Team Lead",
             image: "assets/alexa.jpg",
-            skills: ["Business Development", "Marketing", "Events"],
+            skills: [],
             linkedin: "#",
             github: "#",
             email: "rachel@curacing.com"
