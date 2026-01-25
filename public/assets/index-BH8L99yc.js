@@ -18630,9 +18630,9 @@ const BE = Kl("inline-flex items-center justify-center gap-2 whitespace-nowrap r
             secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:shadow-neon-red",
             ghost: "hover:bg-accent hover:text-accent-foreground",
             link: "text-primary underline-offset-4 hover:underline",
-            racing: "bg-gradient-primary text-primary-foreground shadow-neon-blue hover:shadow-lg hover:scale-105 font-semibold",
+            racing: "bg-gradient-primary text-primary-foreground shadow-neon-gold hover:shadow-lg hover:scale-105 font-semibold",
             hero: "bg-gradient-secondary text-white shadow-lg hover:shadow-neon-red hover:scale-105 font-semibold border border-secondary/20",
-            glow: "bg-transparent border-2 border-primary text-primary shadow-neon-blue hover:bg-primary hover:text-primary-foreground"
+            glow: "bg-transparent border-2 border-primary text-primary shadow-neon-gold hover:bg-primary hover:text-primary-foreground"
         },
         size: {
             default: "h-10 px-4 py-2",
@@ -18975,7 +18975,7 @@ const YE = () => {
     }, {
         icon: pl,
         title: "High Performance",
-        description: "Optimized systems achieving ____ response times"
+        description: "Optimized systems achieving 10ms response times"
     }, {
         icon: as,
         title: "Competition Ready",
@@ -19459,7 +19459,7 @@ Ae.displayName = xx.displayName;
 const c2 = () => {
     const o = [
         { icon: Ql, label: "Email", value: "cuautonomousracing@colorado.edu", link: "mailto:cuautonomousracing@colorado.edu" },
-        { icon: Fa, label: "Location", value: "ECES 112 @ Engineering Center, University of Colorado", link: "#" },
+        { icon: Fa, label: "Location", value: "ECES 112 @ Engineering Center, University of Colorado, Boulder", link: "#" },
         { icon: dk, label: "Time", value: "Meetings Sundays @ 2:30PM" }
     ];
 
@@ -19993,63 +19993,92 @@ const c2 = () => {
     })
 }
   , f2 = () => {
-    const e = [{
+    const e = [
+    {
+        name: "Executives",
+        description: "Leading the organization and setting strategic direction",
+        members: [
+            {
+                name: "Gabriel",
+                role: "Chief Engineer",
+                image: "assets/gabe.jpg",
+                skills: [],
+                linkedin: "#",
+                github: "#",
+                email: "emily@curacing.com"
+            },
+            {
+                name: "Hampton",
+                role: "President",
+                image: "assets/hampton.jpg",
+                skills: [],
+                linkedin: "#",
+                github: "#",
+                email: "james@curacing.com"
+            }
+        ]
+    },
+    {
         name: "Software & AI",
         description: "Developing autonomous driving algorithms and control systems",
-        members: [{
-            name: "Alexander",
-            role: "Software Team Lead",
-            image: "assets/alexander.jpg",
-            skills: ["Python", "ROS", "Computer Vision"],
-            linkedin: "#",
-            github: "#",
-            email: "alex@curacing.com"
-        }]
-    }, {
+        members: [
+            {
+                name: "Alexander",
+                role: "Software Team Lead",
+                image: "assets/alexander.jpg",
+                skills: [],
+                linkedin: "#",
+                github: "#",
+                email: "alex@curacing.com"
+            }
+        ]
+    },
+    {
         name: "Hardware & Mechanical",
         description: "Building and optimizing the physical racing platform",
-        members: [{
-            name: "Lincoln",
-            role: "Mechanical Team Lead",
-            image: "assets/lincoln.png",
-            skills: ["CAD", "3D Printing", "Aerodynamics"],
-            linkedin: "#",
-            github: "#",
-            email: "emily@curacing.com"
-        }]
-    }, {
+        members: [
+            {
+                name: "Lincoln",
+                role: "Mechanical Team Lead",
+                image: "assets/lincoln.png",
+                skills: [],
+                linkedin: "#",
+                github: "#",
+                email: "emily@curacing.com"
+            }
+        ]
+    },
+    {
         name: "Electrical & Sensors",
         description: "Building and optimizing the physical racing platform",
-        members: [{
-            name: "Gabriel",
-            role: "Lead Electrical Engineer & Chief Engineer",
-            image: "assets/gabe.jpg",
-            skills: ["CAD", "3D Printing", "Aerodynamics"],
-            linkedin: "#",
-            github: "#",
-            email: "emily@curacing.com"
-        }]
-    }, {
+        members: [
+            {
+                name: "Caleb",
+                role: "Electrical Engineer",
+                image: "assets/Cease_Caleb_2024.png",
+                skills: [],
+                linkedin: "#",
+                github: "#",
+                email: "caleb@curacing.com"
+            }
+        ]
+    },
+    {
         name: "Operations & Business",
         description: "Managing partnerships, events, and team growth",
-        members: [{
-            name: "Hampton",
-            role: "President",
-            image: "assets/hampton.jpg",
-            skills: ["Leadership", "Strategy", "Communication"],
-            linkedin: "#",
-            github: "#",
-            email: "james@curacing.com"
-        }, {
-            name: "Alexa",
-            role: "Business Team Lead",
-            image: "assets/alexa.jpg",
-            skills: ["Business Development", "Marketing", "Events"],
-            linkedin: "#",
-            github: "#",
-            email: "rachel@curacing.com"
-        }]
-    }]
+        members: [
+            {
+                name: "Alexa",
+                role: "Business Team Lead",
+                image: "assets/alexa.jpg",
+                skills: [],
+                linkedin: "#",
+                github: "#",
+                email: "rachel@curacing.com"
+            }
+        ]
+    }
+]
       , t = [];
     return a.jsxs("div", {
         className: "min-h-screen bg-background",

@@ -332,19 +332,19 @@ img,video {
     --destructive-foreground: 210 20% 98%;
     --border: 215 20% 20%;
     --input: 215 20% 15%;
-    --ring: 200 100% 50%;
+    --ring: 46 100% 50%;
     --popover: 220 15% 8%;
     --popover-foreground: 210 20% 98%;
     --radius: .5rem;
-    --neon-blue: 200 100% 50%;
+    --neon-blue: 46 100% 50%;
     --neon-red: 0 100% 50%;
     --neon-cyan: 180 100% 50%;
-    --grid-color: 200 50% 20%;
+    --grid-color: 46 70% 30%;
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
     --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--primary)));
     --gradient-dark: linear-gradient(180deg, hsl(220 20% 4%), hsl(220 20% 8%));
     --gradient-racing: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--secondary)));
-    --shadow-neon-blue: 0 0 40px hsl(var(--primary-glow) / .5);
+    --shadow-neon-gold: 0 0 40px hsl(46 90% 55% / .6);
     --shadow-neon-red: 0 0 40px hsl(var(--secondary-glow) / .5);
     --shadow-card: 0 10px 40px hsl(0 0% 0% / .5);
     --transition-base: all .3s cubic-bezier(.4, 0, .2, 1);
@@ -2194,7 +2194,7 @@ body {
 
 .text-blue-500 {
     --tw-text-opacity: 1;
-    color: rgb(59 130 246 / var(--tw-text-opacity, 1))
+    color: rgb(207 184 124 / var(--tw-text-opacity, 1))
 }
 
 .text-card-foreground {
@@ -2356,11 +2356,7 @@ body {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)
 }
 
-.shadow-neon-blue {
-    --tw-shadow: var(--shadow-neon-blue);
-    --tw-shadow-colored: var(--shadow-neon-blue);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)
-}
+
 
 .shadow-none {
     --tw-shadow: 0 0 #0000;
@@ -2380,10 +2376,7 @@ body {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)
 }
 
-.shadow-neon-blue {
-    --tw-shadow-color: hsl(var(--neon-blue));
-    --tw-shadow: var(--tw-shadow-colored)
-}
+
 
 .outline-none {
     outline: 2px solid transparent;
@@ -2835,7 +2828,7 @@ body {
 
 .hover\:text-blue-700:hover {
     --tw-text-opacity: 1;
-    color: rgb(29 78 216 / var(--tw-text-opacity, 1))
+    color: rgb(207 184 124 / var(--tw-text-opacity, 1))
 }
 
 .hover\:text-foreground:hover {
@@ -2868,11 +2861,7 @@ body {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)
 }
 
-.hover\:shadow-neon-blue:hover {
-    --tw-shadow: var(--shadow-neon-blue);
-    --tw-shadow-colored: var(--shadow-neon-blue);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)
-}
+
 
 .hover\:shadow-neon-red:hover {
     --tw-shadow: var(--shadow-neon-red);
@@ -2880,10 +2869,11 @@ body {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)
 }
 
-.hover\:shadow-neon-blue:hover {
-    --tw-shadow-color: hsl(var(--neon-blue));
-    --tw-shadow: var(--tw-shadow-colored)
+.hover\:shadow-neon-gold:hover {
+  --tw-shadow-color: hsl(var(--neon-gold));
+  --tw-shadow: var(--shadow-neon-gold);
 }
+
 
 .hover\:shadow-neon-red:hover {
     --tw-shadow-color: hsl(var(--neon-red));
