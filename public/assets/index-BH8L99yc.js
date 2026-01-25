@@ -18905,7 +18905,7 @@ const en = () => {
                             children: "5"
                         }), a.jsx("div", {
                             className: "text-sm text-muted-foreground",
-                            children: "Sensors integrating"
+                            children: "Sensors Integrating"
                         })]
                     }), a.jsxs("div", {
                         className: "space-y-2",
