@@ -18632,7 +18632,7 @@ const BE = Kl("inline-flex items-center justify-center gap-2 whitespace-nowrap r
             link: "text-primary underline-offset-4 hover:underline",
             racing: "bg-gradient-primary text-primary-foreground shadow-neon-gold hover:shadow-lg hover:scale-105 font-semibold",
             hero: "bg-gradient-secondary text-white shadow-lg hover:shadow-neon-red hover:scale-105 font-semibold border border-secondary/20",
-            glow: "bg-transparent border-2 border-primary text-primary shadow-neon-gold hover:bg-primary hover:text-primary-foreground"
+            glow: "bg-transparent border-2 border-warning text-warning shadow-neon-gold hover:bg-warning hover:text-warning-foreground"
         },
         size: {
             default: "h-10 px-4 py-2",
@@ -18828,12 +18828,12 @@ const en = () => {
                     children: [a.jsxs("span", {
                         className: "relative flex h-2 w-2",
                         children: [a.jsx("span", {
-                            className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+                            className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-warning opacity-75"
                         }), a.jsx("span", {
-                            className: "relative inline-flex rounded-full h-2 w-2 bg-primary"
+                            className: "relative inline-flex rounded-full h-2 w-2 bg-warning"
                         })]
                     }), a.jsx("span", {
-                        className: "text-primary text-sm font-medium",
+                        className: "text-warning text-sm font-medium",
                         children: "Engineering the Future"
                     })]
                 }), a.jsxs("h1", {
@@ -18891,7 +18891,7 @@ const en = () => {
                     children: [a.jsxs("div", {
                         className: "space-y-2",
                         children: [a.jsx("div", {
-                            className: "text-3xl font-bold text-primary font-orbitron",
+                            className: "text-3xl font-bold text-warning font-orbitron",
                             children: "30+"
                         }), a.jsx("div", {
                             className: "text-sm text-muted-foreground",
@@ -18923,7 +18923,7 @@ const en = () => {
             className: "absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce",
             "aria-label": "Scroll to next section",
             children: a.jsx(qh, {
-                className: "h-8 w-8 text-primary"
+                className: "h-8 w-8 text-warning"
             })
         })]
     })
@@ -19016,7 +19016,7 @@ const YE = () => {
                         className: "flex gap-8 pt-4",
                         children: [a.jsxs("div", {
                             children: [a.jsx("div", {
-                                className: "text-3xl font-bold text-primary font-orbitron",
+                                className: "text-3xl font-bold text-warning font-orbitron",
                                 children: "2025"
                             }), a.jsx("div", {
                                 className: "text-sm text-muted-foreground",
@@ -30087,210 +30087,6 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                             })]
                         })]
                     }, c))
-                })]
-            })
-        }), a.jsx("section", {
-            className: "py-16 px-4",
-            children: a.jsxs("div", {
-                className: "container mx-auto max-w-2xl",
-                children: [a.jsx("h2", {
-                    className: "text-3xl font-orbitron font-bold text-center mb-12",
-                    children: "Application Form"
-                }), a.jsx(H, {
-                    className: "p-8 bg-gradient-card border-primary/20",
-                    children: a.jsxs("form", {
-                        onSubmit: o,
-                        className: "space-y-6",
-                        children: [a.jsxs("div", {
-                            className: "grid md:grid-cols-2 gap-6",
-                            children: [a.jsxs("div", {
-                                children: [a.jsx(Ae, {
-                                    htmlFor: "name",
-                                    children: "Full Name *"
-                                }), a.jsx(ut, {
-                                    id: "name",
-                                    name: "name",
-                                    value: t.name,
-                                    onChange: i,
-                                    required: !0,
-                                    className: "mt-1"
-                                })]
-                            }), a.jsxs("div", {
-                                children: [a.jsx(Ae, {
-                                    htmlFor: "email",
-                                    children: "Email *"
-                                }), a.jsx(ut, {
-                                    id: "email",
-                                    name: "email",
-                                    type: "email",
-                                    value: t.email,
-                                    onChange: i,
-                                    required: !0,
-                                    className: "mt-1"
-                                })]
-                            })]
-                        }), a.jsxs("div", {
-                            className: "grid md:grid-cols-2 gap-6",
-                            children: [a.jsxs("div", {
-                                children: [a.jsx(Ae, {
-                                    htmlFor: "phone",
-                                    children: "Phone Number"
-                                }), a.jsx(ut, {
-                                    id: "phone",
-                                    name: "phone",
-                                    type: "tel",
-                                    value: t.phone,
-                                    onChange: i,
-                                    className: "mt-1"
-                                })]
-                            }), a.jsxs("div", {
-                                children: [a.jsx(Ae, {
-                                    htmlFor: "major",
-                                    children: "Major *"
-                                }), a.jsx(ut, {
-                                    id: "major",
-                                    name: "major",
-                                    value: t.major,
-                                    onChange: i,
-                                    required: !0,
-                                    className: "mt-1"
-                                })]
-                            })]
-                        }), a.jsxs("div", {
-                            className: "grid md:grid-cols-2 gap-6",
-                            children: [a.jsxs("div", {
-                                children: [a.jsx(Ae, {
-                                    htmlFor: "year",
-                                    children: "Academic Year *"
-                                }), a.jsxs(Ad, {
-                                    value: t.year,
-                                    onValueChange: l => n({
-                                        ...t,
-                                        year: l
-                                    }),
-                                    children: [a.jsx(jl, {
-                                        className: "mt-1",
-                                        children: a.jsx(Od, {
-                                            placeholder: "Select year"
-                                        })
-                                    }), a.jsxs(kl, {
-                                        children: [a.jsx(nt, {
-                                            value: "freshman",
-                                            children: "Freshman"
-                                        }), a.jsx(nt, {
-                                            value: "sophomore",
-                                            children: "Sophomore"
-                                        }), a.jsx(nt, {
-                                            value: "junior",
-                                            children: "Junior"
-                                        }), a.jsx(nt, {
-                                            value: "senior",
-                                            children: "Senior"
-                                        }), a.jsx(nt, {
-                                            value: "graduate",
-                                            children: "Graduate Student"
-                                        })]
-                                    })]
-                                })]
-                            }), a.jsxs("div", {
-                                children: [a.jsx(Ae, {
-                                    htmlFor: "department",
-                                    children: "Preferred Department *"
-                                }), a.jsxs(Ad, {
-                                    value: t.department,
-                                    onValueChange: l => n({
-                                        ...t,
-                                        department: l
-                                    }),
-                                    children: [a.jsx(jl, {
-                                        className: "mt-1",
-                                        children: a.jsx(Od, {
-                                            placeholder: "Select department"
-                                        })
-                                    }), a.jsxs(kl, {
-                                        children: [a.jsx(nt, {
-                                            value: "software",
-                                            children: "Software & AI"
-                                        }), a.jsx(nt, {
-                                            value: "hardware",
-                                            children: "Hardware & Mechanical"
-                                        }), a.jsx(nt, {
-                                            value: "electrical",
-                                            children: "Electrical & Sensors"
-                                        }), a.jsx(nt, {
-                                            value: "operations",
-                                            children: "Operations & Business"
-                                        }), a.jsx(nt, {
-                                            value: "any",
-                                            children: "No Preference"
-                                        })]
-                                    })]
-                                })]
-                            })]
-                        }), a.jsxs("div", {
-                            children: [a.jsx(Ae, {
-                                htmlFor: "experience",
-                                children: "Relevant Experience"
-                            }), a.jsx(Ti, {
-                                id: "experience",
-                                name: "experience",
-                                value: t.experience,
-                                onChange: i,
-                                placeholder: "Tell us about your relevant experience, projects, or skills...",
-                                className: "mt-1",
-                                rows: 4
-                            })]
-                        }), a.jsxs("div", {
-                            children: [a.jsx(Ae, {
-                                htmlFor: "availability",
-                                children: "Weekly Availability (hours)"
-                            }), a.jsx(ut, {
-                                id: "availability",
-                                name: "availability",
-                                value: t.availability,
-                                onChange: i,
-                                placeholder: "e.g., 10-15 hours per week",
-                                className: "mt-1"
-                            })]
-                        }), a.jsxs("div", {
-                            children: [a.jsx(Ae, {
-                                htmlFor: "additionalInfo",
-                                children: "Additional Information"
-                            }), a.jsx(Ti, {
-                                id: "additionalInfo",
-                                name: "additionalInfo",
-                                value: t.additionalInfo,
-                                onChange: i,
-                                placeholder: "Anything else you'd like us to know?",
-                                className: "mt-1",
-                                rows: 3
-                            })]
-                        }), a.jsxs("div", {
-                            className: "flex items-center space-x-2",
-                            children: [a.jsx(Bw, {
-                                id: "terms",
-                                required: !0
-                            }), a.jsx(Ae, {
-                                htmlFor: "terms",
-                                className: "text-sm",
-                                children: "I understand this is a commitment and I'm ready to contribute to the team's success"
-                            })]
-                        }), a.jsxs("div", {
-                            className: "flex gap-4",
-                            children: [a.jsx(B, {
-                                type: "submit",
-                                variant: "racing",
-                                size: "lg",
-                                className: "flex-1",
-                                children: "Submit Application"
-                            }), a.jsx(B, {
-                                type: "button",
-                                variant: "outline",
-                                size: "lg",
-                                children: "Save Draft"
-                            })]
-                        })]
-                    })
                 })]
             })
         }), a.jsx("section", {
