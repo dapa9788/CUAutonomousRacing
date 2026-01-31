@@ -19646,45 +19646,84 @@ const c2 = () => {
             })]
         })
     }), a.jsx("section", {
-        className: "py-16 px-4",
-        children: a.jsx("div", {
-            className: "container mx-auto",
-            children: a.jsxs("div", {
-                className: "grid md:grid-cols-2 gap-12 items-center",
-                children: [a.jsxs("div", {
-                    children: [a.jsx("h2", {
-                        className: "text-3xl font-orbitron font-bold mb-6 text-warning",
-                        children: "About the Founders"
-                    }), a.jsx("p", {
-                        className: "text-muted-foreground mb-4",
-                        children: "CU Autonomous Racing was created as an opportunity for students to get the most out of their college experience and prepare them for tackling real world challenges. We wanted to create an environment where students could gain leadership experience and practice hands-on engineering working as a team."
-                    }), a.jsx("p", {
-                        className: "text-muted-foreground mb-4",
-                        children: "From the beginning, we knew we wanted to create a racing team and compete in annual, international competition. But we saw something bigger: autonomous driving is rapidly changing the transportation industry. CU Boulder’s students have the talent to lead that space yet there wasn’t a club focussed primarily on autonomous vehicle development. CU Autonomous Racing was created to fill that gap."
-                    }),
-                    a.jsx("p", {
-                        className: "text-muted-foreground mb-4",
-                        children: "July 2025 marked the beginning of CU Autonomous Racing. To kickstart our launch, we quickly built a small demonstration vehicle with a basic automatic braking system and lane keeping system. This gave us a simple proof-of-concept for our recruitment video."
-                    }),
-                    a.jsx("p", {
-                        className: "text-muted-foreground",
-                        children: "In Fall 2025, we grew into a dedicated and enthusiastic team. We built and tested our first full prototype. This Spring 2026, we’re building on that momentum as we take major steps toward our full-size autonomous race kart. With steady progress and a driven team behind it, we’re on track to compete this June."
-                    })
-                ]
-                }), a.jsx("div", {
-                    className: "relative",
-                    children: a.jsx("div", {
-                        className: "aspect-[3/4] bg-card rounded-lg",
-                        children: a.jsx("img", {
-                            src: "/assets/execphoto.jpg", // your image path
-                            alt: "CU Autonomous Racing Team",
-                            className: "w-full h-full object-cover"
-                        })
-                    })
-                })]
+  className: "py-16 px-4",
+  children: a.jsx("div", {
+    className: "container mx-auto",
+    children: a.jsxs("div", {
+      className: "flex flex-col gap-16",
+
+      children: [
+        // ===== ABOUT GRID =====
+        a.jsxs("div", {
+          className: "grid md:grid-cols-2 gap-12 items-center",
+          children: [
+            a.jsxs("div", {
+              children: [
+                a.jsx("h2", {
+                  className: "text-3xl font-orbitron font-bold mb-6 text-warning",
+                  children: "About the Founders"
+                }),
+                a.jsx("p", {
+                  className: "text-muted-foreground mb-4",
+                  children:
+                    "CU Autonomous Racing was created as an opportunity for students to get the most out of their college experience and prepare them for tackling real world challenges. We wanted to create an environment where students could gain leadership experience and practice hands-on engineering working as a team."
+                }),
+                a.jsx("p", {
+                  className: "text-muted-foreground mb-4",
+                  children:
+                    "From the beginning, we knew we wanted to create a racing team and compete in annual, international competition. But we saw something bigger: autonomous driving is rapidly changing the transportation industry. CU Boulder’s students have the talent to lead that space yet there wasn’t a club focused primarily on autonomous vehicle development. CU Autonomous Racing was created to fill that gap."
+                }),
+                a.jsx("p", {
+                  className: "text-muted-foreground mb-4",
+                  children:
+                    "July 2025 marked the beginning of CU Autonomous Racing. To kickstart our launch, we quickly built a small demonstration vehicle with a basic automatic braking system and lane keeping system. This gave us a simple proof-of-concept for our recruitment video."
+                }),
+                a.jsx("p", {
+                  className: "text-muted-foreground",
+                  children:
+                    "In Fall 2025, we grew into a dedicated and enthusiastic team. We built and tested our first full prototype. This Spring 2026, we’re building on that momentum as we take major steps toward our full-size autonomous race kart. With steady progress and a driven team behind it, we’re on track to compete this June."
+                })
+              ]
+            }),
+
+            a.jsx("div", {
+              className: "relative",
+              children: a.jsx("div", {
+                className: "aspect-[3/4] bg-card rounded-lg",
+                children: a.jsx("img", {
+                  src: "/assets/execphoto.jpg",
+                  alt: "CU Autonomous Racing Team",
+                  className: "w-full h-full object-cover"
+                })
+              })
             })
+          ]
+        }),
+
+        // ===== VIDEO BELOW =====
+        a.jsxs("div", {
+          className: "flex flex-col items-center",
+          children: [
+            a.jsx("h3", {
+              className:
+                "text-2xl font-orbitron font-bold mb-6 text-warning text-center",
+              children: "Recruitment Video: 1:10 Scale Demo"
+            }),
+            a.jsx("video", {
+              className: "w-full max-w-4xl rounded-lg shadow-lg",
+              controls: true,
+              children: a.jsx("source", {
+                src: "/assets/Media1.mp4",
+                type: "video/mp4"
+              })
+            })
+          ]
         })
-    }), a.jsx(tn, {})]
+      ]
+    })
+  })
+})
+, a.jsx(tn, {})]
 })
   , h2 = () => {
     const e = [{
