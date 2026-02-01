@@ -19779,13 +19779,17 @@ const c2 = () => {
                     children: "Partner with CU Autonomous Racing and drive the future of autonomous vehicle technology"
                 }), a.jsxs("div", {
                     className: "flex gap-4 justify-center",
-                    children: [a.jsxs(B, {
-                        variant: "racing",
-                        size: "lg",
-                        className: "group",
-                        children: ["Download Sponsor Package", a.jsx(Hh, {
-                            className: "ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform"
-                        })]
+                    children: [a.jsx("a", {
+                        href: "/assets/sponsorpackage.pdf",
+                        download: "Sponsorship Packet Autonomous Racing Club.pdf",
+                        children: a.jsxs(B, {
+                            variant: "racing",
+                            size: "lg",
+                            className: "group",
+                            children: ["Download Sponsor Package", a.jsx(Hh, {
+                                className: "ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform"
+                            })]
+                        })
                     }), a.jsx(B, {
                         variant: "outline",
                         size: "lg",
@@ -19816,49 +19820,6 @@ const c2 = () => {
                         }), a.jsx("p", {
                             className: "text-muted-foreground",
                             children: n.description
-                        })]
-                    }, r))
-                })]
-            })
-        }), a.jsx("section", {
-            className: "py-16 px-4 bg-gradient-dark",
-            children: a.jsxs("div", {
-                className: "container mx-auto",
-                children: [a.jsx("h2", {
-                    className: "text-3xl font-orbitron font-bold text-center mb-12",
-                    children: "Sponsorship Tiers"
-                }), a.jsx("div", {
-                    className: "grid md:grid-cols-2 lg:grid-cols-4 gap-6",
-                    children: e.map( (n, r) => a.jsxs(H, {
-                        className: `p-6 ${n.color} relative overflow-hidden ${n.featured ? "scale-105 shadow-glow" : ""}`,
-                        children: [n.featured && a.jsx(we, {
-                            className: "absolute top-4 right-4 bg-warning",
-                            children: "Most Popular"
-                        }), a.jsx("h3", {
-                            className: "text-2xl font-orbitron font-bold mb-2",
-                            children: n.name
-                        }), a.jsx("p", {
-                            className: "text-3xl font-bold text-warning mb-6",
-                            children: n.price
-                        }), a.jsx("ul", {
-                            className: "space-y-3",
-                            children: n.benefits.map( (s, o) => a.jsxs("li", {
-                                className: "flex items-start gap-2",
-                                children: [a.jsx(t0, {
-                                    className: "h-5 w-5 text-warning shrink-0 mt-0.5"
-                                }), a.jsx("span", {
-                                    className: "text-sm",
-                                    children: s
-                                })]
-                            }, o))
-                        }), a.jsx(B, {
-                            variant: "racing",
-                            className: "w-full mt-6",
-                            asChild: !0,
-                            children: a.jsxs(me, {
-                                to: "/sponsor-contact",
-                                children: ["Choose ", n.name]
-                            })
                         })]
                     }, r))
                 })]
