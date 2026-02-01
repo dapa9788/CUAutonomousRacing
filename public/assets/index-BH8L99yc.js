@@ -19852,7 +19852,7 @@ const c2 = () => {
             children: a.jsx("div", {
               className: "w-64 h-64 flex items-center justify-center",
               children: a.jsx("img", {
-                src: "/assets/star.jpg",
+                src: "/assets/partner2.png",
                 alt: "Partner 2",
                 className: "w-full h-full object-contain"
               })
