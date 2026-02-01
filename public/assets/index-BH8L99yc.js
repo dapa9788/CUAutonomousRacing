@@ -18832,21 +18832,8 @@ const en = () => {
             className: "relative z-20 container mx-auto px-4 text-center",
             children: a.jsxs("div", {
                 className: "space-y-8 animate-fade-in",
-                children: [a.jsxs("div", {
-                    className: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-warning/10 border border-warning/20 backdrop-blur-sm",
-                    children: [a.jsxs("span", {
-                        className: "relative flex h-2 w-2",
-                        children: [a.jsx("span", {
-                            className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-warning opacity-75"
-                        }), a.jsx("span", {
-                            className: "relative inline-flex rounded-full h-2 w-2 bg-warning"
-                        })]
-                    }), a.jsx("span", {
-                        className: "text-warning text-sm font-medium",
-                        children: "Engineering the Future"
-                    })]
-                }), a.jsxs("h1", {
-                    className: "text-5xl md:text-7xl lg:text-8xl font-orbitron font-bold tracking-tight",
+                children: [a.jsxs("h1", {
+                    className: "text-5xl md:text-7xl lg:text-8xl font-orbitron font-bold tracking-tight text-center",
                     children: [a.jsx("span", {
                         className: "block text-foreground",
                         children: "CU AUTONOMOUS"
@@ -18855,7 +18842,7 @@ const en = () => {
                         children: "RACING"
                     })]
                 }), a.jsx("p", {
-                    className: "text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light",
+                    className: "text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light text-center",
                     children: "Where cutting-edge AI meets high-speed racing. Building the next generation of autonomous vehicles at the intersection of innovation and adrenaline."
                 }), a.jsxs("div", {
                     className: "flex flex-col sm:flex-row gap-4 justify-center items-center pt-8",
@@ -18929,10 +18916,10 @@ const en = () => {
             })
         }), a.jsx("button", {
             onClick: r,
-            className: "absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce",
-            "aria-label": "Scroll to next section",
+            className:
+  "absolute bottom-8 left-1/2 transform -translate-x-1/2 -translate-x-8 z-20 animate-bounce flex items-center justify-center",
             children: a.jsx(qh, {
-                className: "h-8 w-8 text-yellow-500 fill-current stroke-current"
+                className: "h-8 w-8 text-warning"
             })
         })]
     })
