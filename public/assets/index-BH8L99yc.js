@@ -18917,7 +18917,7 @@ const en = () => {
         }), a.jsx("button", {
             onClick: r,
             className:
-  "absolute bottom-8 left-1/2 transform -translate-x-1/2 -translate-x-8 z-20 animate-bounce flex items-center justify-center",
+            "absolute bottom-8 left-1/2 transform -translate-x-1/2 -translate-x-8 z-20 animate-bounce flex items-center justify-center",
             children: a.jsx(qh, {
                 className: "h-8 w-8 text-warning"
             })
@@ -19313,21 +19313,8 @@ const s2 = () => {
                     className: "bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6",
                     children: [a.jsx("h3", {
                         className: "text-xl font-semibold mb-4",
-                        children: "Contribute your vote!"
-                    }), a.jsxs("div", {
-                        className: "flex gap-4",
-                        children: [
-                            a.jsx("a", {
-                            href: "https://docs.google.com/forms/d/e/1FAIpQLSdnx39haPYg_5u9KUd_yqJAnO_g1xA2cDw8-tlyWjKSXzsDVg/viewform?usp=publish-editor", // replace with your form URL
-                            target: "_blank", // optional: opens in a new tab
-                            rel: "noopener noreferrer", // security best practice
-                            children: a.jsx(B, {
-                                variant: "glow",
-                                children: "Vote here"
-                            })
-                            })
-                        ]
-                        })]
+                        children: "Voting Coming Soon!"
+                    })]
                 }), a.jsx("p", {
                     className: "text-center mt-8 text-muted-foreground italic",
                     children: "The winning name will officially represent our first car in CU Autonomous Racing history!"
