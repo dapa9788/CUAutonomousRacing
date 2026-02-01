@@ -18719,9 +18719,9 @@ const en = () => {
                         href: "https://instagram.com/cuautonomousracing",
                         target: "_blank",
                         rel: "noopener noreferrer",
-                        className: "text-muted-foreground hover:text-warning transition-colors p-2",
+                        className: "text-white hover:text-warning transition-colors p-2",
                         children: a.jsx(lk, {
-                            className: "h-4 w-4"
+                            className: "h-5 w-5"
                         })
                     })]
                 }), a.jsx("button", {
@@ -19802,8 +19802,8 @@ const c2 = () => {
                         variant: "outline",
                         size: "lg",
                         asChild: !0,
-                        children: a.jsx(me, {
-                            href: "mailto:hampton.langenbeck@colorado.edu",
+                        children: a.jsx("a", {
+                            href: "/#contact",
                             children: "Contact Us"
                         })
                     })]
@@ -19842,119 +19842,36 @@ const c2 = () => {
         children: "Our Partners"
       }),
 
-      a.jsxs("div", {
-        className: "grid grid-cols-2 md:grid-cols-4 gap-8",
+      a.jsx("div", {
+        className: "grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto",
         children: [
 
           // Partner 1
-          a.jsx(H, {
-            className:
-              "p-8 bg-gradient-card border-warning/20 flex items-center justify-center hover:border-warning/40 transition-all group",
-            children: a.jsxs("div", {
-              className: "text-center",
-              children: [
-                a.jsx("div", {
-                  className:
-                    "w-32 h-32 bg-muted/20 rounded-lg mb-4 flex items-center justify-center overflow-hidden group-hover:bg-warning/10 transition-colors",
-                  children: a.jsx("img", {
-                    src: "/assets/ride.png",
-                    alt: "Ride a Kart",
-                    className: "w-full h-full object-contain"
-                  })
-                }),
-                a.jsx("p", {
-                  className: "text-sm text-muted-foreground",
-                  children: "Ride a Kart"
-                }),
-              ]
+          a.jsx("div", {
+            className: "flex items-center justify-center",
+            children: a.jsx("div", {
+              className: "w-64 h-64 flex items-center justify-center",
+              children: a.jsx("img", {
+                src: "/assets/ride.png",
+                alt: "Partner 1",
+                className: "w-full h-full object-contain"
+              })
             })
           }),
 
           // Partner 2
-          a.jsx(H, {
-            className:
-              "p-8 bg-gradient-card border-warning/20 flex items-center justify-center hover:border-warning/40 transition-all group",
-            children: a.jsxs("div", {
-              className: "text-center",
-              children: [
-                a.jsx("div", {
-                  className:
-                    "w-32 h-32 bg-muted/20 rounded-lg mb-4 flex items-center justify-center overflow-hidden group-hover:bg-warning/10 transition-colors",
-                  children: a.jsx("img", {
-                    src: "/partners/partner2.png",
-                    alt: "Partner 2",
-                    className: "w-full h-full object-contain"
-                  })
-                }),
-                a.jsx("p", {
-                  className: "text-sm text-muted-foreground",
-                  children: "Partner 2"
-                }),
-                a.jsx("p", {
-                  className: "text-xs text-muted-foreground/60",
-                  children: "Coming Soon"
-                })
-              ]
-            })
-          }),
-
-          // Partner 3
-          a.jsx(H, {
-            className:
-              "p-8 bg-gradient-card border-warning/20 flex items-center justify-center hover:border-warning/40 transition-all group",
-            children: a.jsxs("div", {
-              className: "text-center",
-              children: [
-                a.jsx("div", {
-                  className:
-                    "w-32 h-32 bg-muted/20 rounded-lg mb-4 flex items-center justify-center overflow-hidden group-hover:bg-warning/10 transition-colors",
-                  children: a.jsx("img", {
-                    src: "/partners/partner3.png",
-                    alt: "Partner 3",
-                    className: "w-full h-full object-contain"
-                  })
-                }),
-                a.jsx("p", {
-                  className: "text-sm text-muted-foreground",
-                  children: "Partner 3"
-                }),
-                a.jsx("p", {
-                  className: "text-xs text-muted-foreground/60",
-                  children: "Coming Soon"
-                })
-              ]
-            })
-          }),
-
-          // Partner 4
-          a.jsx(H, {
-            className:
-              "p-8 bg-gradient-card border-warning/20 flex items-center justify-center hover:border-warning/40 transition-all group",
-            children: a.jsxs("div", {
-              className: "text-center",
-              children: [
-                a.jsx("div", {
-                  className:
-                    "w-32 h-32 bg-muted/20 rounded-lg mb-4 flex items-center justify-center overflow-hidden group-hover:bg-warning/10 transition-colors",
-                  children: a.jsx("img", {
-                    src: "/partners/partner4.png",
-                    alt: "Partner 4",
-                    className: "w-full h-full object-contain"
-                  })
-                }),
-                a.jsx("p", {
-                  className: "text-sm text-muted-foreground",
-                  children: "Partner 4"
-                }),
-                a.jsx("p", {
-                  className: "text-xs text-muted-foreground/60",
-                  children: "Coming Soon"
-                })
-              ]
+          a.jsx("div", {
+            className: "flex items-center justify-center",
+            children: a.jsx("div", {
+              className: "w-64 h-64 flex items-center justify-center",
+              children: a.jsx("img", {
+                src: "/assets/star.jpg",
+                alt: "Partner 2",
+                className: "w-full h-full object-contain"
+              })
             })
           })
 
-          // keep copy-pasting for 5–8
         ]
       })
     ]
@@ -20087,8 +20004,8 @@ const c2 = () => {
                         variant: "outline",
                         size: "lg",
                         asChild: !0,
-                        children: a.jsx(me, {
-                            href: "mailto:cuautonomousracing@colorado.edu",
+                        children: a.jsx("a", {
+                            href: "/#contact",
                             children: "Contact Us"
                         })
                     })]
