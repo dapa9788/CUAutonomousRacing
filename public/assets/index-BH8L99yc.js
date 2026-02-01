@@ -19702,12 +19702,12 @@ const c2 = () => {
 
         // ===== VIDEO BELOW =====
         a.jsxs("div", {
-          className: "flex flex-col items-center",
+          className: "flex flex-col items-center mt-24",
           children: [
             a.jsx("h3", {
               className:
                 "text-2xl font-orbitron font-bold mb-6 text-warning text-center",
-              children: "Recruitment Video: 1:10 Scale Demo"
+              children: "Recruitment Video: 1:10 Scale Demo (Fall 2025)"
             }),
             a.jsx("video", {
               className: "w-full max-w-4xl rounded-lg shadow-lg",
@@ -19930,7 +19930,6 @@ const c2 = () => {
     const e = [
     {
         name: "Executives",
-        description: "Leading the organization and setting strategic direction",
         members: [
             {
                 name: "Hampton",
@@ -19953,8 +19952,7 @@ const c2 = () => {
         ]
     },
     {
-        name: "Software & AI",
-        description: "Developing autonomous driving algorithms and control systems",
+        name: "Team Leads",
         members: [
             {
                 name: "Alexander",
@@ -19964,13 +19962,7 @@ const c2 = () => {
                 linkedin: "#",
                 github: "#",
                 email: "alex@curacing.com"
-            }
-        ]
-    },
-    {
-        name: "Hardware & Mechanical",
-        description: "Building and optimizing the physical racing platform",
-        members: [
+            },
             {
                 name: "Lincoln",
                 role: "Mechanical Team Lead",
@@ -19979,13 +19971,7 @@ const c2 = () => {
                 linkedin: "#",
                 github: "#",
                 email: "emily@curacing.com"
-            }
-        ]
-    },
-    {
-        name: "Electrical & Sensors",
-        description: "Building and optimizing the physical racing platform",
-        members: [
+            },
             {
                 name: "Caleb",
                 role: "Electrical Team Lead",
@@ -19994,13 +19980,8 @@ const c2 = () => {
                 linkedin: "#",
                 github: "#",
                 email: "caleb@curacing.com"
-            }
-        ]
-    },
-    {
-        name: "Operations & Business",
-        description: "Managing partnerships, events, and team growth",
-        members: [{
+            },
+            {
             name: "Frida",
             role: "Business Team Lead",
             image: "assets/alexa.jpg",
@@ -20008,12 +19989,14 @@ const c2 = () => {
             linkedin: "#",
             github: "#",
             email: "rachel@curacing.com"
-        }]
+            }
+        ]
     }]
       , t = [];
     return a.jsxs("div", {
         className: "min-h-screen bg-background",
-        children: [a.jsx(en, {}), a.jsx("section", {
+        children: [a.jsx(en, {}), 
+            a.jsx("section", {
             className: "pt-24 pb-12 px-4 bg-gradient-dark",
             children: a.jsxs("div", {
                 className: "container mx-auto text-center",
@@ -20088,13 +20071,13 @@ const c2 = () => {
                         children: n.description
                     })]
                 }), a.jsx("div", {
-                    className: "grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-6 justify-items-center",
+                    className: `grid gap-6 justify-items-center ${n.name === "Executives" ? "grid-cols-1 md:grid-cols-2" : n.name === "Team Leads" ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-4xl mx-auto" : "grid-cols-[repeat(auto-fit,minmax(260px,1fr))]"}`,
                     children: n.members.map( (s, o) => a.jsx(H, {
-                        className: "p-6 bg-gradient-card border-warning/20 hover:border-warning/40 transition-all hover:scale-105 group",
+                        className: `${n.name === "Executives" || n.name === "Team Leads" ? "p-8" : "p-6"} bg-gradient-card border-warning/20 hover:border-warning/40 transition-all hover:scale-105 group`,
                         children: a.jsxs("div", {
                             className: "flex flex-col items-center text-center",
                             children: [a.jsx("div", {
-                                className: "w-24 h-24 rounded-full overflow-hidden mb-4 ring-2 ring-warning/20 group-hover:ring-warning/40 transition-all",
+                                className: `${n.name === "Executives" || n.name === "Team Leads" ? "w-32 h-32" : "w-24 h-24"} rounded-full overflow-hidden mb-4 ring-2 ring-warning/20 group-hover:ring-warning/40 transition-all`,
                                 children: a.jsx("img", {
                                     src: s.image,
                                     alt: s.name,
