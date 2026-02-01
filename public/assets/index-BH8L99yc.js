@@ -19640,9 +19640,6 @@ const c2 = () => {
             children: [a.jsx("h1", {
                 className: "text-4xl md:text-6xl font-orbitron font-bold text-center mb-6 bg-gradient-racing bg-clip-text text-transparent",
                 children: "About CU Autonomous Racing"
-            }), a.jsx("p", {
-                className: "text-xl text-muted-foreground text-center max-w-3xl mx-auto",
-                children: "Building the future of autonomous racing at the University of Colorado Boulder"
             })]
         })
     }), a.jsx("section", {
@@ -19932,7 +19929,7 @@ const c2 = () => {
         name: "Executives",
         members: [
             {
-                name: "Hampton",
+                name: "Hampton Langenck",
                 role: "President",
                 image: "assets/hampton.jpg",
                 skills: [],
@@ -19941,7 +19938,7 @@ const c2 = () => {
                 email: "james@curacing.com"
             },
             {
-                name: "Gabriel",
+                name: "Gabriel Wardell",
                 role: "Chief Engineer",
                 image: "assets/gabe.jpg",
                 skills: [],
@@ -19955,7 +19952,7 @@ const c2 = () => {
         name: "Team Leads",
         members: [
             {
-                name: "Alexander",
+                name: "Alexander Gholmieh",
                 role: "Software Team Lead",
                 image: "assets/alexander.jpg",
                 skills: [],
@@ -19964,7 +19961,7 @@ const c2 = () => {
                 email: "alex@curacing.com"
             },
             {
-                name: "Lincoln",
+                name: "Lincoln Lovelace",
                 role: "Mechanical Team Lead",
                 image: "assets/lincoln.png",
                 skills: [],
@@ -19973,7 +19970,7 @@ const c2 = () => {
                 email: "emily@curacing.com"
             },
             {
-                name: "Caleb",
+                name: "Caleb Cease",
                 role: "Electrical Team Lead",
                 image: "assets/Cease_Caleb_2024.png",
                 skills: [],
@@ -19982,7 +19979,7 @@ const c2 = () => {
                 email: "caleb@curacing.com"
             },
             {
-            name: "Frida",
+            name: "Frida Rodriguez",
             role: "Business Team Lead",
             image: "assets/alexa.jpg",
             skills: [],
@@ -20038,13 +20035,13 @@ const c2 = () => {
                         value: "30+"
                     }, {
                         label: "Departments",
-                        value: "4"
+                        value: "5"
                     }, {
                         label: "Team Leads",
                         value: "4"
                     }, {
                         label: "Subteams",
-                        value: "5"
+                        value: "4"
                     }].map( (n, r) => a.jsxs(H, {
                         className: "p-6 text-center bg-gradient-card border-warning/20",
                         children: [a.jsx("p", {
