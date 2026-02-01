@@ -18715,6 +18715,14 @@ const en = () => {
                             to: "/join",
                             children: "Join Us"
                         })
+                    }), a.jsx("a", {
+                        href: "https://instagram.com/cuautonomousracing",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "text-muted-foreground hover:text-warning transition-colors p-2",
+                        children: a.jsx(lk, {
+                            className: "h-4 w-4"
+                        })
                     })]
                 }), a.jsx("button", {
                     onClick: () => r(!n),
@@ -19780,8 +19788,8 @@ const c2 = () => {
                 }), a.jsxs("div", {
                     className: "flex gap-4 justify-center",
                     children: [a.jsx("a", {
-                        href: "/assets/sponsorpackage.pdf",
-                        download: "Sponsorship Packet Autonomous Racing Club.pdf",
+                        href: "/assets/sponsor-package.pdf",
+                        download: "CU-Autonomous-Racing-Sponsor-Package.pdf",
                         children: a.jsxs(B, {
                             variant: "racing",
                             size: "lg",
@@ -20091,15 +20099,12 @@ const c2 = () => {
             children: a.jsx("div", {
                 className: "container mx-auto",
                 children: a.jsx("div", {
-                    className: "grid grid-cols-2 md:grid-cols-4 gap-6",
+                    className: "grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto",
                     children: [{
                         label: "Active Members",
                         value: "30+"
                     }, {
                         label: "Departments",
-                        value: "4"
-                    }, {
-                        label: "Team Leads",
                         value: "4"
                     }, {
                         label: "Subteams",
@@ -30001,55 +30006,6 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
         }), a.jsx("section", {
             className: "py-16 px-4 bg-gradient-dark",
             children: a.jsxs("div", {
-                className: "container mx-auto",
-                children: [a.jsx("h2", {
-                    className: "text-3xl font-orbitron font-bold text-center mb-12",
-                    children: "Choose Your Department"
-                }), a.jsx("div", {
-                    className: "grid lg:grid-cols-3 gap-6",
-                    children: r.map( (l, c) => a.jsxs(H, {
-                        className: "p-6 bg-gradient-card border-warning/20 hover:border-warning/40 transition-all hover:scale-105",
-                        children: [a.jsx(l.icon, {
-                            className: "h-12 w-12 text-warning mb-4"
-                        }), a.jsx("h3", {
-                            className: "text-xl font-bold mb-3",
-                            children: l.name
-                        }), a.jsx("p", {
-                            className: "text-muted-foreground mb-4",
-                            children: l.description
-                        }), a.jsxs("div", {
-                            className: "mb-4",
-                            children: [a.jsx("p", {
-                                className: "text-sm font-semibold mb-2",
-                                children: "Required Skills:"
-                            }), a.jsx("div", {
-                                className: "flex flex-wrap gap-2",
-                                children: l.skills.map( (u, d) => a.jsx(we, {
-                                    variant: "secondary",
-                                    className: "text-xs",
-                                    children: u
-                                }, d))
-                            })]
-                        }), a.jsxs("div", {
-                            children: [a.jsx("p", {
-                                className: "text-sm font-semibold mb-2",
-                                children: "Open Positions:"
-                            }), a.jsx("ul", {
-                                className: "space-y-1",
-                                children: l.openRoles.map( (u, d) => a.jsxs("li", {
-                                    className: "text-sm text-muted-foreground flex items-center gap-2",
-                                    children: [a.jsx(Hh, {
-                                        className: "h-3 w-3 text-warning"
-                                    }), u]
-                                }, d))
-                            })]
-                        })]
-                    }, c))
-                })]
-            })
-        }), a.jsx("section", {
-            className: "py-16 px-4 bg-gradient-dark",
-            children: a.jsxs("div", {
                 className: "container mx-auto max-w-3xl",
                 children: [a.jsx("h2", {
                     className: "text-3xl font-orbitron font-bold text-center mb-12",
@@ -30061,13 +30017,10 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                         a: "No! We welcome students from all backgrounds and skill levels. We provide training and mentorship."
                     }, {
                         q: "What's the time commitment?",
-                        a: "We expect members to contribute 8-12 hours per week, but this can be flexible based on your schedule."
+                        a: "We expect members to contribute roughly 6 hours per week, but this can be flexible based on your schedule."
                     }, {
                         q: "Can I join multiple departments?",
                         a: "Yes! Many members contribute to multiple areas based on their interests and skills."
-                    }, {
-                        q: "When are applications reviewed?",
-                        a: "We review applications on a rolling basis and respond within 48 hours."
                     }].map( (l, c) => a.jsxs(H, {
                         className: "p-6 bg-gradient-card border-warning/20",
                         children: [a.jsx("h3", {
