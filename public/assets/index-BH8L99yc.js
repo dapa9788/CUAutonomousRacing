@@ -19864,35 +19864,133 @@ const c2 = () => {
                 })]
             })
         }), a.jsx("section", {
-            className: "py-16 px-4",
+  className: "py-16 px-4",
+  children: a.jsxs("div", {
+    className: "container mx-auto",
+    children: [
+      a.jsx("h2", {
+        className: "text-3xl font-orbitron font-bold text-center mb-12",
+        children: "Our Partners"
+      }),
+
+      a.jsxs("div", {
+        className: "grid grid-cols-2 md:grid-cols-4 gap-8",
+        children: [
+
+          // Partner 1
+          a.jsx(H, {
+            className:
+              "p-8 bg-gradient-card border-warning/20 flex items-center justify-center hover:border-warning/40 transition-all group",
             children: a.jsxs("div", {
-                className: "container mx-auto",
-                children: [a.jsx("h2", {
-                    className: "text-3xl font-orbitron font-bold text-center mb-12",
-                    children: "Our Partners"
-                }), a.jsx("div", {
-                    className: "grid grid-cols-2 md:grid-cols-4 gap-8",
-                    children: [1, 2, 3, 4, 5, 6, 7, 8].map(n => a.jsx(H, {
-                        className: "p-8 bg-gradient-card border-warning/20 flex items-center justify-center hover:border-warning/40 transition-all group",
-                        children: a.jsxs("div", {
-                            className: "text-center",
-                            children: [a.jsx("div", {
-                                className: "w-32 h-32 bg-muted/20 rounded-lg mb-4 flex items-center justify-center group-hover:bg-warning/10 transition-colors",
-                                children: a.jsx(fk, {
-                                    className: "h-12 w-12 text-muted-foreground group-hover:text-warning transition-colors"
-                                })
-                            }), a.jsxs("p", {
-                                className: "text-sm text-muted-foreground",
-                                children: ["Partner ", n]
-                            }), a.jsx("p", {
-                                className: "text-xs text-muted-foreground/60",
-                                children: "Coming Soon"
-                            })]
-                        })
-                    }, n))
-                })]
+              className: "text-center",
+              children: [
+                a.jsx("div", {
+                  className:
+                    "w-32 h-32 bg-muted/20 rounded-lg mb-4 flex items-center justify-center overflow-hidden group-hover:bg-warning/10 transition-colors",
+                  children: a.jsx("img", {
+                    src: "/assets/ride.png",
+                    alt: "Ride a Kart",
+                    className: "w-full h-full object-contain"
+                  })
+                }),
+                a.jsx("p", {
+                  className: "text-sm text-muted-foreground",
+                  children: "Ride a Kart"
+                }),
+              ]
             })
-        }), a.jsx("section", {
+          }),
+
+          // Partner 2
+          a.jsx(H, {
+            className:
+              "p-8 bg-gradient-card border-warning/20 flex items-center justify-center hover:border-warning/40 transition-all group",
+            children: a.jsxs("div", {
+              className: "text-center",
+              children: [
+                a.jsx("div", {
+                  className:
+                    "w-32 h-32 bg-muted/20 rounded-lg mb-4 flex items-center justify-center overflow-hidden group-hover:bg-warning/10 transition-colors",
+                  children: a.jsx("img", {
+                    src: "/partners/partner2.png",
+                    alt: "Partner 2",
+                    className: "w-full h-full object-contain"
+                  })
+                }),
+                a.jsx("p", {
+                  className: "text-sm text-muted-foreground",
+                  children: "Partner 2"
+                }),
+                a.jsx("p", {
+                  className: "text-xs text-muted-foreground/60",
+                  children: "Coming Soon"
+                })
+              ]
+            })
+          }),
+
+          // Partner 3
+          a.jsx(H, {
+            className:
+              "p-8 bg-gradient-card border-warning/20 flex items-center justify-center hover:border-warning/40 transition-all group",
+            children: a.jsxs("div", {
+              className: "text-center",
+              children: [
+                a.jsx("div", {
+                  className:
+                    "w-32 h-32 bg-muted/20 rounded-lg mb-4 flex items-center justify-center overflow-hidden group-hover:bg-warning/10 transition-colors",
+                  children: a.jsx("img", {
+                    src: "/partners/partner3.png",
+                    alt: "Partner 3",
+                    className: "w-full h-full object-contain"
+                  })
+                }),
+                a.jsx("p", {
+                  className: "text-sm text-muted-foreground",
+                  children: "Partner 3"
+                }),
+                a.jsx("p", {
+                  className: "text-xs text-muted-foreground/60",
+                  children: "Coming Soon"
+                })
+              ]
+            })
+          }),
+
+          // Partner 4
+          a.jsx(H, {
+            className:
+              "p-8 bg-gradient-card border-warning/20 flex items-center justify-center hover:border-warning/40 transition-all group",
+            children: a.jsxs("div", {
+              className: "text-center",
+              children: [
+                a.jsx("div", {
+                  className:
+                    "w-32 h-32 bg-muted/20 rounded-lg mb-4 flex items-center justify-center overflow-hidden group-hover:bg-warning/10 transition-colors",
+                  children: a.jsx("img", {
+                    src: "/partners/partner4.png",
+                    alt: "Partner 4",
+                    className: "w-full h-full object-contain"
+                  })
+                }),
+                a.jsx("p", {
+                  className: "text-sm text-muted-foreground",
+                  children: "Partner 4"
+                }),
+                a.jsx("p", {
+                  className: "text-xs text-muted-foreground/60",
+                  children: "Coming Soon"
+                })
+              ]
+            })
+          })
+
+          // keep copy-pasting for 5–8
+        ]
+      })
+    ]
+  })
+}), a.jsx("section", {
             className: "py-16 px-4 bg-gradient-dark",
             children: a.jsxs("div", {
                 className: "container mx-auto text-center",
@@ -19932,7 +20030,7 @@ const c2 = () => {
         name: "Executives",
         members: [
             {
-                name: "Hampton",
+                name: "Hampton Langenck",
                 role: "President",
                 image: "assets/hampton.jpg",
                 skills: [],
@@ -19941,7 +20039,7 @@ const c2 = () => {
                 email: "james@curacing.com"
             },
             {
-                name: "Gabriel",
+                name: "Gabriel Wardell",
                 role: "Chief Engineer",
                 image: "assets/gabe.jpg",
                 skills: [],
@@ -19955,7 +20053,7 @@ const c2 = () => {
         name: "Team Leads",
         members: [
             {
-                name: "Alexander",
+                name: "Alexander Gholmieh",
                 role: "Software Team Lead",
                 image: "assets/alexander.jpg",
                 skills: [],
@@ -19964,7 +20062,7 @@ const c2 = () => {
                 email: "alex@curacing.com"
             },
             {
-                name: "Lincoln",
+                name: "Lincoln Lovelace",
                 role: "Mechanical Team Lead",
                 image: "assets/lincoln.png",
                 skills: [],
@@ -19973,7 +20071,7 @@ const c2 = () => {
                 email: "emily@curacing.com"
             },
             {
-                name: "Caleb",
+                name: "Caleb Cease",
                 role: "Electrical Team Lead",
                 image: "assets/Cease_Caleb_2024.png",
                 skills: [],
@@ -19982,7 +20080,7 @@ const c2 = () => {
                 email: "caleb@curacing.com"
             },
             {
-            name: "Frida",
+            name: "Frida Rodriguez",
             role: "Business Team Lead",
             image: "assets/alexa.jpg",
             skills: [],
@@ -20071,13 +20169,13 @@ const c2 = () => {
                         children: n.description
                     })]
                 }), a.jsx("div", {
-                    className: `grid gap-6 justify-items-center ${n.name === "Executives" ? "grid-cols-1 md:grid-cols-2" : n.name === "Team Leads" ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-4xl mx-auto" : "grid-cols-[repeat(auto-fit,minmax(260px,1fr))]"}`,
+                    className: "grid gap-6 justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-4xl mx-auto",
                     children: n.members.map( (s, o) => a.jsx(H, {
-                        className: `${n.name === "Executives" || n.name === "Team Leads" ? "p-8" : "p-6"} bg-gradient-card border-warning/20 hover:border-warning/40 transition-all hover:scale-105 group`,
+                        className: "p-8 bg-gradient-card border-warning/20 hover:border-warning/40 transition-all hover:scale-105 group",
                         children: a.jsxs("div", {
                             className: "flex flex-col items-center text-center",
                             children: [a.jsx("div", {
-                                className: `${n.name === "Executives" || n.name === "Team Leads" ? "w-32 h-32" : "w-24 h-24"} rounded-full overflow-hidden mb-4 ring-2 ring-warning/20 group-hover:ring-warning/40 transition-all`,
+                                className: "w-32 h-32 rounded-full overflow-hidden mb-4 ring-2 ring-warning/20 group-hover:ring-warning/40 transition-all",
                                 children: a.jsx("img", {
                                     src: s.image,
                                     alt: s.name,
@@ -20096,27 +20194,6 @@ const c2 = () => {
                                     className: "text-xs",
                                     children: i
                                 }, l))
-                            }), a.jsxs("div", {
-                                className: "flex gap-3",
-                                children: [a.jsx("a", {
-                                    href: s.linkedin,
-                                    className: "text-muted-foreground hover:text-warning transition-colors",
-                                    children: a.jsx(Kh, {
-                                        className: "h-5 w-5"
-                                    })
-                                }), a.jsx("a", {
-                                    href: s.github,
-                                    className: "text-muted-foreground hover:text-warning transition-colors",
-                                    children: a.jsx(Gl, {
-                                        className: "h-5 w-5"
-                                    })
-                                }), a.jsx("a", {
-                                    href: `mailto:${s.email}`,
-                                    className: "text-muted-foreground hover:text-warning transition-colors",
-                                    children: a.jsx(Ql, {
-                                        className: "h-5 w-5"
-                                    })
-                                })]
                             })]
                         })
                     }, o))
