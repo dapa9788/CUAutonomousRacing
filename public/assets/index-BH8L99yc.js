@@ -19178,11 +19178,11 @@ const s2 = () => {
     const {toast: e} = Di()
       , [t,n] = g.useState([{
         id: 1,
-        name: "Lightning Byte",
+        name: "Kartificial Intelligence",
         votes: 42
     }, {
         id: 2,
-        name: "RoboRacer",
+        name: "Envy",
         votes: 38
     }, {
         id: 3,
