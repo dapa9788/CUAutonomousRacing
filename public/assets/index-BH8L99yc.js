@@ -19890,7 +19890,7 @@ const c2 = () => {
         name: "Executives",
         members: [
             {
-                name: "Hampton Langenck",
+                name: "Hampton Langenbeck",
                 role: "President",
                 image: "assets/hampton.jpg",
                 skills: [],
