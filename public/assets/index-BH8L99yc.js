@@ -19844,6 +19844,18 @@ const c2 = () => {
                 className: "w-full h-full object-contain"
               })
             })
+          }),
+
+          a.jsx("div", {
+            className: "flex items-center justify-center",
+            children: a.jsx("div", {
+              className: "w-64 h-64 flex items-center justify-center",
+              children: a.jsx("img", {
+                src: "/assets/image0.jpg",
+                alt: "Partner 3",
+                className: "w-full h-full object-contain"
+              })
+            })
           })
 
         ]
