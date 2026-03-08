@@ -19807,57 +19807,179 @@ const c2 = () => {
                 })]
             })
         }), a.jsx("section", {
-  className: "py-16 px-4",
+  className: "py-16 px-4 bg-white",
   children: a.jsxs("div", {
     className: "container mx-auto",
     children: [
-      a.jsx("h2", {
+      a.jsxs("h2", {
         className: "text-3xl font-orbitron font-bold text-center mb-12",
-        children: "Our Partners"
+        children: [
+          a.jsx("span", {
+            className: "text-black",
+            children: "Our "
+          }),
+          a.jsx("span", {
+            className: "text-black",
+            children: "Partners"
+          })
+        ]
       }),
 
-      a.jsx("div", {
-        className: "grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto",
+      // Gold Sponsors
+      a.jsxs("div", {
+        className: "mb-12",
         children: [
-
-          // Partner 1
-          a.jsx("div", {
-            className: "flex items-center justify-center",
-            children: a.jsx("div", {
-              className: "w-64 h-64 flex items-center justify-center",
-              children: a.jsx("img", {
-                src: "/assets/ride.png",
-                alt: "Partner 1",
-                className: "w-full h-full object-contain"
+          a.jsxs("h3", {
+            className: "text-2xl font-orbitron font-bold mb-6 text-center",
+            children: [
+              a.jsx("span", {
+                className: "text-yellow-500",
+                children: "Gold"
+              }),
+              a.jsx("span", {
+                className: "text-black",
+                children: " Sponsors"
               })
-            })
+            ]
           }),
-
-          // Partner 2
           a.jsx("div", {
-            className: "flex items-center justify-center",
+            className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center",
             children: a.jsx("div", {
-              className: "w-64 h-64 flex items-center justify-center",
-              children: a.jsx("img", {
-                src: "/assets/partner2.png",
-                alt: "Partner 2",
-                className: "w-full h-full object-contain"
-              })
-            })
-          }),
-
-          a.jsx("div", {
-            className: "flex items-center justify-center",
-            children: a.jsx("div", {
-              className: "w-64 h-64 flex items-center justify-center",
-              children: a.jsx("img", {
-                src: "/assets/image0.jpg",
-                alt: "Partner 3",
-                className: "w-full h-full object-contain"
+              className: "p-8 bg-white w-full max-w-sm",
+              children: a.jsx("div", {
+                className: "text-center",
+                children: a.jsx("div", {
+                  className: "w-full h-32 flex items-center justify-center",
+                  children: a.jsx("img", {
+                    src: "/assets/image0.jpg",
+                    alt: "Engineering Council",
+                    className: "w-full h-full object-contain"
+                  })
+                })
               })
             })
           })
+        ]
+      }),
 
+      // Silver Sponsors
+      a.jsxs("div", {
+        className: "mb-12",
+        children: [
+          a.jsxs("h3", {
+            className: "text-2xl font-orbitron font-bold mb-6 text-center",
+            children: [
+              a.jsx("span", {
+                className: "text-gray-400",
+                children: "Silver"
+              }),
+              a.jsx("span", {
+                className: "text-black",
+                children: " Sponsors"
+              })
+            ]
+          }),
+          a.jsxs("div", {
+            className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center",
+            children: [
+              a.jsx("div", {
+                className: "p-8 bg-white w-full max-w-sm",
+                children: a.jsx("div", {
+                  className: "text-center",
+                  children: a.jsx("div", {
+                    className: "w-full h-32 flex items-center justify-center p-4",
+                    children: a.jsx("img", {
+                      src: "/assets/ride.png",
+                      alt: "Ride a Kart",
+                      className: "max-w-full max-h-full object-contain mx-auto"
+                    })
+                  })
+                })
+              }),
+              a.jsx("div", {
+                className: "p-8 bg-white w-full max-w-sm",
+                children: a.jsx("div", {
+                  className: "text-center",
+                  children: a.jsx("div", {
+                    className: "w-full h-32 flex items-center justify-center p-4",
+                    children: a.jsx("img", {
+                      src: "/assets/partner2.png",
+                      alt: "E Power",
+                      className: "max-w-full max-h-full object-contain mx-auto"
+                    })
+                  })
+                })
+              })
+            ]
+          })
+        ]
+      }),
+
+      // Bronze Sponsors
+      a.jsxs("div", {
+        children: [
+          a.jsxs("h3", {
+            className: "text-2xl font-orbitron font-bold mb-6 text-center",
+            children: [
+              a.jsx("span", {
+                style: { color: "rgb(114, 67, 3)" },
+                children: "Bronze"
+              }),
+              a.jsx("span", {
+                className: "text-black",
+                children: " Sponsors"
+              })
+            ]
+          }),
+          a.jsx("div", {
+            className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center",
+            children: a.jsx("div", {
+              className: "p-8 bg-white w-full max-w-sm",
+              children: a.jsx("div", {
+                className: "text-center",
+                children: a.jsx("div", {
+                  className: "w-full h-32 bg-gray-50 rounded-lg flex items-center justify-center p-4",
+                  children: a.jsx("img", {
+                    src: "/assets/UCEC.jpg",
+                    alt: "UCEC",
+                    className: "max-w-full max-h-full object-contain mx-auto"
+                  })
+                })
+              })
+            })
+          })
+        ]
+      }),
+
+      // Crew Tier
+      a.jsxs("div", {
+        children: [
+          a.jsxs("h3", {
+            className: "text-2xl font-orbitron font-bold mb-6 text-center",
+            children: [
+              a.jsx("span", {
+                className: "text-black",
+                children: "Crew Tier"
+              })
+            ]
+          }),
+          a.jsx("div", {
+            className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center",
+            children: a.jsx("div", {
+              className: "p-8 bg-white w-full max-w-sm",
+              children: a.jsx("div", {
+                className: "text-center",
+                children: a.jsx("div", {
+                  className: "w-full h-32 bg-gray-50 rounded-lg flex items-center justify-center p-4",
+                  children: a.jsx("img", {
+                    src: "/assets/CUSG.avif",
+                    alt: "CUSG",
+                    className: "max-w-full max-h-full object-contain mx-auto"
+                  })
+                })
+              })
+            })
+          })
         ]
       })
     ]
@@ -29869,7 +29991,6 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                     children: [a.jsxs(B, {
                         variant: "racing",
                         size: "lg",
-                        onClick: () => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf3pRXZ_FKpp_j-MU-34obCNL--ZPOkpwMuVhO12bLojM4DHQ/viewform?usp=dialog", "_blank"),
                         children: [a.jsx(mo, {
                             className: "mr-2 h-4 w-4"
                         }), "Apply Now"]
