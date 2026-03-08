@@ -29869,6 +29869,7 @@ const bA = "https://qojocowsjvvoqezhmiwu.supabase.co"
                     children: [a.jsxs(B, {
                         variant: "racing",
                         size: "lg",
+                        onClick: () => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf3pRXZ_FKpp_j-MU-34obCNL--ZPOkpwMuVhO12bLojM4DHQ/viewform?usp=dialog", "_blank"),
                         children: [a.jsx(mo, {
                             className: "mr-2 h-4 w-4"
                         }), "Apply Now"]
