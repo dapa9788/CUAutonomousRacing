@@ -18854,7 +18854,7 @@ const en = () => {
                                     size: "lg",
                                     variant: "racing",
                                     className: `group relative overflow-hidden ${t ? "animate-rev" : ""}`,
-                                    onClick: s,
+                                    onClick: () => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf3pRXZ_FKpp_j-MU-34obCNL--ZPOkpwMuVhO12bLojM4DHQ/viewform?usp=dialog", "_blank"),
                                     children: [a.jsxs("span", {
                                         className: "relative z-10 flex items-center",
                                         children: ["Join the Race", a.jsx(r0, {
