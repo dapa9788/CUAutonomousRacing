@@ -18723,6 +18723,12 @@ const en = () => {
                         children: a.jsx(lk, {
                             className: "h-5 w-5"
                         })
+                    }), a.jsx("a", {
+                        href: "https://www.gofundme.com/f/help-cu-autonomous-racing-compete-at-aks",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "text-white hover:text-warning transition-colors px-3 py-1 border border-white rounded text-sm font-semibold",
+                        children: "Donate"
                     })]
                 }), a.jsx("button", {
                     onClick: () => r(!n),
