@@ -20106,7 +20106,7 @@ const c2 = () => {
                 email: "james@curacing.com"
             },
             {
-                name: "Gabriel Wardell",
+                name: "Gabriel Wardall",
                 role: "Chief Engineer",
                 image: "assets/gabe.jpg",
                 skills: [],
@@ -20147,7 +20147,7 @@ const c2 = () => {
                 email: "caleb@curacing.com"
             },
             {
-            name: "Frida Rodriguez",
+            name: "Frida Cruz",
             role: "Business Team Lead",
             image: "assets/alexa.jpg",
             skills: [],
