@@ -19871,7 +19871,6 @@ const c2 = () => {
                     })
                 })
             }),
-
             a.jsx("div", {
             className: "p-8 bg-white w-full max-w-sm",
             children: a.jsx("div", {
@@ -19879,12 +19878,12 @@ const c2 = () => {
                 children: a.jsx("div", {
                 className: "w-full h-32 flex items-center justify-center p-4",
                 children: a.jsx("a", {
-                    href: "https://extremecanopy.com", // <-- your link
+                    href: "https://www.epowerg.com/", // <-- your link
                     target: "_blank",
                     rel: "noopener noreferrer",
                     children: a.jsx("img", {
-                    src: "/assets/extremecanopysponsor.png",
-                    alt: "Extreme Canopy",
+                    src: "/assets/partner2.png",
+                    alt: "E Power",
                     className: "max-w-full max-h-full object-contain mx-auto cursor-pointer"
                     })
                 })
@@ -19935,7 +19934,6 @@ const c2 = () => {
                     })
                 })
             }),
-
             a.jsx("div", {
             className: "p-8 bg-white w-full max-w-sm",
             children: a.jsx("div", {
@@ -19943,12 +19941,12 @@ const c2 = () => {
                 children: a.jsx("div", {
                 className: "w-full h-32 flex items-center justify-center p-4",
                 children: a.jsx("a", {
-                    href: "https://www.epowerg.com/", // <-- your link
+                    href: "https://rapidharness.com/", // <-- your link
                     target: "_blank",
                     rel: "noopener noreferrer",
                     children: a.jsx("img", {
-                    src: "/assets/partner2.png",
-                    alt: "E Power",
+                    src: "/assets/RapidHarnessLogoLarge.png",
+                    alt: "Rapid harness",
                     className: "max-w-full max-h-full object-contain mx-auto cursor-pointer"
                     })
                 })
@@ -19998,7 +19996,6 @@ const c2 = () => {
                     })
                 })
             }),
-
             a.jsx("div", {
             className: "p-8 bg-white w-full max-w-sm",
             children: a.jsx("div", {
@@ -20006,18 +20003,20 @@ const c2 = () => {
                 children: a.jsx("div", {
                 className: "w-full h-32 flex items-center justify-center p-4",
                 children: a.jsx("a", {
-                    href: "https://rapidharness.com/", // <-- your link
+                    href: "https://extremecanopy.com", // <-- your link
                     target: "_blank",
                     rel: "noopener noreferrer",
                     children: a.jsx("img", {
-                    src: "/assets/RapidHarnessLogoLarge.png",
-                    alt: "Rapid harness",
+                    src: "/assets/extremecanopysponsor.png",
+                    alt: "Extreme Canopy",
                     className: "max-w-full max-h-full object-contain mx-auto cursor-pointer"
                     })
                 })
                 })
             })
             })
+
+            
         ]
         })
         ]
