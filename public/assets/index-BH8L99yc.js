@@ -19848,23 +19848,51 @@ const c2 = () => {
               })
             ]
           }),
-          a.jsx("div", {
+          
+          a.jsxs("div", {
             className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center",
+            children: [
+                a.jsx("div", {
+                className: "p-8 bg-white w-full max-w-sm",
+                children: a.jsx("div", {
+                    className: "text-center",
+                    children: a.jsx("div", {
+                    className: "w-full h-32 flex items-center justify-center p-4",
+                    children: a.jsx("a", {
+                        href: "https://repairmastersauto.com/", // <-- your link
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: a.jsx("img", {
+                        src: "/assets/image0.jpg",
+                        alt: "Repair Masters Automotive",
+                        className: "max-w-full max-h-full object-contain mx-auto cursor-pointer"
+                        })
+                    })
+                    })
+                })
+            }),
+
+            a.jsx("div", {
+            className: "p-8 bg-white w-full max-w-sm",
             children: a.jsx("div", {
-              className: "p-8 bg-white w-full max-w-sm",
-              children: a.jsx("div", {
                 className: "text-center",
                 children: a.jsx("div", {
-                  className: "w-full h-32 flex items-center justify-center",
-                  children: a.jsx("img", {
-                    src: "/assets/image0.jpg",
-                    alt: "Engineering Council",
-                    className: "w-full h-full object-contain"
-                  })
+                className: "w-full h-32 flex items-center justify-center p-4",
+                children: a.jsx("a", {
+                    href: "https://extremecanopy.com", // <-- your link
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: a.jsx("img", {
+                    src: "/assets/extremecanopysponsor.png",
+                    alt: "Extreme Canopy",
+                    className: "max-w-full max-h-full object-contain mx-auto cursor-pointer"
+                    })
                 })
-              })
+                })
             })
-          })
+            })
+        ]
+        }),
         ]
       }),
 
@@ -19888,36 +19916,47 @@ const c2 = () => {
           a.jsxs("div", {
             className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center",
             children: [
-              a.jsx("div", {
+                a.jsx("div", {
                 className: "p-8 bg-white w-full max-w-sm",
                 children: a.jsx("div", {
-                  className: "text-center",
-                  children: a.jsx("div", {
+                    className: "text-center",
+                    children: a.jsx("div", {
                     className: "w-full h-32 flex items-center justify-center p-4",
-                    children: a.jsx("img", {
-                      src: "/assets/ride.png",
-                      alt: "Ride a Kart",
-                      className: "max-w-full max-h-full object-contain mx-auto"
+                    children: a.jsx("a", {
+                        href: "https://rideakart.com/", // <-- your link
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: a.jsx("img", {
+                        src: "/assets/ride.png",
+                        alt: "Ride A Kart",
+                        className: "max-w-full max-h-full object-contain mx-auto cursor-pointer"
+                        })
                     })
-                  })
+                    })
                 })
-              }),
-              a.jsx("div", {
-                className: "p-8 bg-white w-full max-w-sm",
+            }),
+
+            a.jsx("div", {
+            className: "p-8 bg-white w-full max-w-sm",
+            children: a.jsx("div", {
+                className: "text-center",
                 children: a.jsx("div", {
-                  className: "text-center",
-                  children: a.jsx("div", {
-                    className: "w-full h-32 flex items-center justify-center p-4",
+                className: "w-full h-32 flex items-center justify-center p-4",
+                children: a.jsx("a", {
+                    href: "https://www.epowerg.com/", // <-- your link
+                    target: "_blank",
+                    rel: "noopener noreferrer",
                     children: a.jsx("img", {
-                      src: "/assets/partner2.png",
-                      alt: "E Power",
-                      className: "max-w-full max-h-full object-contain mx-auto"
+                    src: "/assets/partner2.png",
+                    alt: "E Power",
+                    className: "max-w-full max-h-full object-contain mx-auto cursor-pointer"
                     })
-                  })
                 })
-              })
-            ]
-          })
+                })
+            })
+            })
+        ]
+        }),
         ]
       }),
 
@@ -19937,23 +19976,50 @@ const c2 = () => {
               })
             ]
           }),
-          a.jsx("div", {
+          a.jsxs("div", {
             className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center",
+            children: [
+                a.jsx("div", {
+                className: "p-8 bg-white w-full max-w-sm",
+                children: a.jsx("div", {
+                    className: "text-center",
+                    children: a.jsx("div", {
+                    className: "w-full h-32 flex items-center justify-center p-4",
+                    children: a.jsx("a", {
+                        href: "https://www.colorado.edu/ucec/", // <-- your link
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: a.jsx("img", {
+                        src: "/assets/UCEC.jpg",
+                        alt: "UCEC",
+                        className: "max-w-full max-h-full object-contain mx-auto cursor-pointer"
+                        })
+                    })
+                    })
+                })
+            }),
+
+            a.jsx("div", {
+            className: "p-8 bg-white w-full max-w-sm",
             children: a.jsx("div", {
-              className: "p-8 bg-white w-full max-w-sm",
-              children: a.jsx("div", {
                 className: "text-center",
                 children: a.jsx("div", {
-                  className: "w-full h-32 bg-gray-50 rounded-lg flex items-center justify-center p-4",
-                  children: a.jsx("img", {
-                    src: "/assets/UCEC.jpg",
-                    alt: "UCEC",
-                    className: "max-w-full max-h-full object-contain mx-auto"
-                  })
+                className: "w-full h-32 flex items-center justify-center p-4",
+                children: a.jsx("a", {
+                    href: "https://rapidharness.com/", // <-- your link
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: a.jsx("img", {
+                    src: "/assets/RapidHarnessLogoLarge.png",
+                    alt: "Rapid harness",
+                    className: "max-w-full max-h-full object-contain mx-auto cursor-pointer"
+                    })
                 })
-              })
+                })
             })
-          })
+            })
+        ]
+        })
         ]
       }),
 
@@ -19972,18 +20038,20 @@ const c2 = () => {
           a.jsx("div", {
             className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center",
             children: a.jsx("div", {
-              className: "p-8 bg-white w-full max-w-sm",
-              children: a.jsx("div", {
-                className: "text-center",
+              className: "text-center",
                 children: a.jsx("div", {
-                  className: "w-full h-32 bg-gray-50 rounded-lg flex items-center justify-center p-4",
-                  children: a.jsx("img", {
+                className: "w-full h-64 flex items-center justify-center p-4",
+                children: a.jsx("a", {
+                    href: "https://www.colorado.edu/cusg/", // <-- your link
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: a.jsx("img", {
                     src: "/assets/CUSG.avif",
-                    alt: "CUSG",
-                    className: "max-w-full max-h-full object-contain mx-auto"
-                  })
+                    alt: "Cu boulder student government",
+                    className: "max-w-full max-h-full object-contain mx-auto cursor-pointer"
+                    })
                 })
-              })
+                })
             })
           })
         ]
